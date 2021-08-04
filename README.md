@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @9EED
 - 👀 I’m interested in not much
-- 🌱 I’m currently learning c++ unreal
+- 🌱 I’m currently learning c++
 - 💞️ I’m looking to collaborate on nothing
 - 📫 How to reach me : Don't
