@@ -43,6 +43,17 @@ body{
     font-weight: bold;
     text-shadow: #351b0770 4px 4px 6px;
     user-select: none;
+    transform: scale(103%);
+    animation: hover-off 0.2s linear 0s 1 forwards;
+    -webkit-animation: hover-off 0.2s linear 0s 1 forwards;
+    -webkit-transform: scale(103%);
+    -moz-transform: scale(103%);
+    -ms-transform: scale(103%);
+    -o-transform: scale(103%);
+}
+#main-title:hover{
+    animation: hover-on 0.2s linear 0s 1 forwards;
+    -webkit-animation: hover-on 0.2s linear 0s 1 forwards;
 }
 .arrow-down{
     margin-right: 15px;
@@ -84,7 +95,23 @@ body{
         -moz-transform: scale(105%) rotate(45deg);
         -ms-transform: scale(105%) rotate(45deg);
         -o-transform: scale(105%) rotate(45deg);
+    }
 }
+#down img{
+    width: 70px;
+    filter: drop-shadow( 4px 4px 6px #20100470) invert(0.08);
+    -webkit-filter: drop-shadow( 4px 4px 6px #20100470) invert(0.08);
+    transform: scale(103%);
+    animation: hover-off 0.1s linear 0s 1 forwards;
+    -webkit-animation: hover-off 0.1s linear 0s 1 forwards;
+    -webkit-transform: scale(103%);
+    -moz-transform: scale(103%);
+    -ms-transform: scale(103%);
+    -o-transform: scale(103%);
+}
+#down:hover{
+    animation: hover-on 0.1s linear 0s 1 forwards;
+    -webkit-animation: hover-on 0.1s linear 0s 1 forwards;
 }
 #about-me-page{
     height: 100vh;
@@ -97,6 +124,7 @@ body{
     height: 75vh;
     width: 80vw;
     background-color: #ddc8;
+    backdrop-filter: blur(2px);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -131,6 +159,7 @@ body{
     height: 75vh;
     width: 80vw;
     background-color: #ddc8;
+    backdrop-filter: blur(2px);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -216,6 +245,7 @@ body{
 }
 #projects{
     background-color: #ddc8;
+    backdrop-filter: blur(2px);
     width: 80vw;
     height: 75vh;
     border-radius: 10px;
@@ -318,6 +348,7 @@ body{
     height: 75vh;
     width: 80vw;
     background-color: #ddc8;
+    backdrop-filter: blur(2px);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -347,6 +378,7 @@ body{
     gap: 15px;
 }
 .contact{
+    overflow-x: auto;
     padding: 10px;
     background-color: rgba(229, 220, 201, 0.831);
     border-radius: 8px;
@@ -394,17 +426,26 @@ body{
     background-color: #ddc8;
     font-family: 'Nunito', sans-serif;
     text-align: center;
-    font-size: 40px;
+    font-size: 20px;
     font-weight: bold;
-    text-shadow: #351b0770 4px 4px 6px;
+    text-shadow: #351b0770 2px 2px 4px;
     user-select: none;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
+#Icons8 a{
+    text-decoration: underline #111 2px;
+}
 
 @keyframes hover-off {
+    0%{
+        transform: scale(103%);
+        -webkit-transform: scale(103%);
+        -moz-transform: scale(103%);
+        -ms-transform: scale(103%);
+        -o-transform: scale(103%);
+}
     100%{
         transform: scale(100%);
         -webkit-transform: scale(100%);
@@ -414,6 +455,13 @@ body{
     }
 }
 @keyframes hover-on {
+    0%{
+        transform: scale(100%);
+        -webkit-transform: scale(100%);
+        -moz-transform: scale(100%);
+        -ms-transform: scale(100%);
+        -o-transform: scale(100%);
+    }
     100%{
         transform: scale(103%);
         -webkit-transform: scale(103%);
@@ -421,4 +469,20 @@ body{
         -ms-transform: scale(103%);
         -o-transform: scale(103%);
     }
+}
+
+@media only screen and ( max-aspect-ratio: 1/1 ) {
+    /* checking if in portrait mode*/
+    #skill-set, #contacts{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat( 4, 1fr);
+    }
+    #projects-grid{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+#landing-page:focus, #skill-set-page:focus, #about-me-page:focus, #projects-page:focus, #contacts-page:focus{
+    outline: none;
 }

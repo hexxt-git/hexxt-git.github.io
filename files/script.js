@@ -140,20 +140,20 @@ function loop(){
     
     step++
 
-    if ( step < 100 & step % 3 == 0 ){
-        circles.push(new Object( rdm(width), rdm(height), 'fillCircle', random( 5, 25), 8, '#fff2', '#fff'+rdm(4), rdmAround(1), rdmAround(1)))
-    }
-
     if ( canvas.width != window.innerWidth | canvas.height != window.innerHeight ){
         width = window.innerWidth
-        height = window.innerHeight - 9    
+        height = window.innerHeight
         canvas.width = width
         canvas.height = height
     }
 
+    if ( step < 100 & step % 3 == 0 ){
+        circles.push(new Object( rdm(width), rdm(height), 'fillCircle', random( 5, 25), 8, '#fff2', '#fff'+rdm(4), rdmAround(1), rdmAround(1)))
+    }
 
-    if ( mouse.z ) circles.push( new Object( mouse.x, mouse.y, 'fillCircle', random( 5, 25), 8, '#fff2', '#fff'+rdm(4), rdmAround(1)*2, rdmAround(1)*2) )
-    if ( step % 10 == 0 & mouse.onScreen ) circles.push( new Object( mouse.x, mouse.y, 'fillCircle', random( 5, 25), 8, '#fff2', '#fff'+rdm(4), rdmAround(1.5), rdmAround(1.5)) )
+
+    if ( step % 20 == 0 & mouse.onScreen ) circles.push( new Object( mouse.x, mouse.y, 'fillCircle', random( 5, 25), 8, '#fff2', '#fff'+rdm(4), rdmAround(1.5), rdmAround(1.5)) )
+    if ( mouse.z ) circles.push( new Object( mouse.x, mouse.y, 'fillCircle', random( 5, 25), 8, '#fff2', '#fff'+rdm(4), rdmAround(2), rdmAround(2)) )
     
     for ( let i in circles ){
         circles[i].update()
