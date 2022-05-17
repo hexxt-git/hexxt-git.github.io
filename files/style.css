@@ -422,7 +422,7 @@ body{
     grid-column: 1/3;
 }
 #footer{
-    height: 25vh;
+    height: 150px;
     background-color: #ddc8;
     font-family: 'Nunito', sans-serif;
     text-align: center;
