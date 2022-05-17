@@ -51,10 +51,10 @@ window.addEventListener( 'mousedown', ()=>{
 window.addEventListener( 'mouseup', ()=>{
     mouse.z = false
 })
-window.addEventListener( 'onmouseover', ()=>{
+document.body.addEventListener( 'mouseenter', ()=>{
     mouse.onScreen = true
 })
-window.addEventListener ( 'onmouseout', ()=>{
+document.body.addEventListener ( 'mouseleave', ()=>{
     mouse.onScreen = false
 })
 
@@ -148,11 +148,12 @@ function loop(){
     }
 
 
-    if ( step % 5 == 0 & mouse.onScreen | mouse.z ) circles.push( new Object( mouse.x, mouse.y, 'fillCircle', random( 5, 25), 8, '#fff2', '#fff'+rdm(4), rdmAround(1)*2, rdmAround(1)*2) )
+    if ( mouse.z ) circles.push( new Object( mouse.x, mouse.y, 'fillCircle', random( 5, 25), 8, '#fff2', '#fff'+rdm(4), rdmAround(1)*2, rdmAround(1)*2) )
+    if ( step % 10 == 0 & mouse.onScreen ) circles.push( new Object( mouse.x, mouse.y, 'fillCircle', random( 5, 25), 8, '#fff2', '#fff'+rdm(4), rdmAround(1.5), rdmAround(1.5)) )
     
     for ( let i in circles ){
         circles[i].update()
-        if( i < circles.length - 500 ){
+        if( i < circles.length - 1000 ){
             circles.shift()
         }
     }

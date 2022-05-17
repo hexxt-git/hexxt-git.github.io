@@ -4,6 +4,10 @@
     scrollbar-width: thin;
     scroll-behavior: smooth;
 }
+*:any-link{
+    color: #111;
+    text-decoration: none;
+}
 body{
     font-family: roboto, sans-serif;
     font-size: 30px;
@@ -90,7 +94,7 @@ body{
     align-items: center;
 }
 #about-me-container{
-    height: 80vh;
+    height: 75vh;
     width: 80vw;
     background-color: #ddc8;
     border-radius: 10px;
@@ -114,7 +118,90 @@ body{
 #about-me{
     user-select: text;
     text-shadow: #95633bd9 2px 2px 4px;
-    font-size: 4vw;
+    font-size: 30px;
+}
+#skill-set-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#skill-set-container{
+    height: 75vh;
+    width: 80vw;
+    background-color: #ddc8;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 20px;
+    box-shadow: #b9641eaa 8px 8px 8px;
+}
+#skill-set-title{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    text-shadow: #95633bd9 2px 2px 4px;
+    user-select: none;
+}
+#skill-set{
+    user-select: text;
+    text-shadow: #95633bd9 2px 2px 4px;
+    font-size: 35px;
+    height: calc( 100% - 80px );
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+.skill{
+    padding: 10px;
+    background-color: rgba(229, 220, 201, 0.831);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: #7e675486 3px 3px 6px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 1fr 1fr;
+    transform: scale(103%);
+    animation: hover-off 0.1s linear 0s 1 forwards;
+    -webkit-animation: hover-off 0.1s linear 0s 1 forwards;
+    -webkit-transform: scale(103%);
+    -moz-transform: scale(103%);
+    -ms-transform: scale(103%);
+    -o-transform: scale(103%);
+    overflow: hidden;
+}
+.skill:hover{
+    animation: hover-on 0.1s linear 0s 1 forwards;
+    -webkit-animation: hover-on 0.1s linear 0s 1 forwards;
+}
+.skill-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill-image img{
+    width: 100%;
+}
+.skill-title{
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+}
+.skill-details{
+    font-size: 25px;
+    display: flex;
+    grid-column: 1/3;
 }
 #projects-page{
     height: 100vh;
@@ -130,7 +217,7 @@ body{
 #projects{
     background-color: #ddc8;
     width: 80vw;
-    height: 80vh;
+    height: 75vh;
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -174,28 +261,14 @@ body{
     transform: scale(103%);
     animation: hover-off 0.1s linear 0s 1 forwards;
     -webkit-animation: hover-off 0.1s linear 0s 1 forwards;
+    -webkit-transform: scale(103%);
+    -moz-transform: scale(103%);
+    -ms-transform: scale(103%);
+    -o-transform: scale(103%);
 }
 .project:hover{
     animation: hover-on 0.1s linear 0s 1 forwards;
     -webkit-animation: hover-on 0.1s linear 0s 1 forwards;
-}
-@keyframes hover-off {
-    100%{
-        transform: scale(100%);
-        -webkit-transform: scale(100%);
-        -moz-transform: scale(100%);
-        -ms-transform: scale(100%);
-        -o-transform: scale(100%);
-    }
-}
-@keyframes hover-on {
-    100%{
-        transform: scale(103%);
-        -webkit-transform: scale(103%);
-        -moz-transform: scale(103%);
-        -ms-transform: scale(103%);
-        -o-transform: scale(103%);
-    }
 }
 .project-image-holder{
     height: calc(100% - 40px);
@@ -234,16 +307,118 @@ body{
     justify-content: center;
     align-items: center;
 }
-footer{
+#contacts-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#contacts-container{
+    height: 75vh;
+    width: 80vw;
+    background-color: #ddc8;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 20px;
+    box-shadow: #b9641eaa 8px 8px 8px;
+}
+#contacts-title{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 45px;
+    text-shadow: #95633bd9 2px 2px 4px;
+    user-select: none;
+}
+#contacts{
+    user-select: text;
+    text-shadow: #95633bd9 2px 2px 4px;
+    font-size: 35px;
+    height: calc( 100% - 80px );
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+}
+.contact{
+    padding: 10px;
+    background-color: rgba(229, 220, 201, 0.831);
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    box-shadow: #7e675486 3px 3px 6px;
+    cursor: pointer;
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: 1fr 1fr;
+    transform: scale(103%);
+    animation: hover-off 0.1s linear 0s 1 forwards;
+    -webkit-animation: hover-off 0.1s linear 0s 1 forwards;
+    -webkit-transform: scale(103%);
+    -moz-transform: scale(103%);
+    -ms-transform: scale(103%);
+    -o-transform: scale(103%);
+}
+.contact:hover{
+    animation: hover-on 0.1s linear 0s 1 forwards;
+    -webkit-animation: hover-on 0.1s linear 0s 1 forwards;
+}
+.contact-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact-image img{
+    width: 100%;
+}
+.contact-title{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+}
+.contact-details{
+    font-size: 25px;
+    display: flex;
+    grid-column: 1/3;
+}
+#footer{
     height: 25vh;
     background-color: #ddc8;
     font-family: 'Nunito', sans-serif;
     text-align: center;
-    font-size: 75px;
+    font-size: 40px;
     font-weight: bold;
     text-shadow: #351b0770 4px 4px 6px;
     user-select: none;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+
+@keyframes hover-off {
+    100%{
+        transform: scale(100%);
+        -webkit-transform: scale(100%);
+        -moz-transform: scale(100%);
+        -ms-transform: scale(100%);
+        -o-transform: scale(100%);
+    }
+}
+@keyframes hover-on {
+    100%{
+        transform: scale(103%);
+        -webkit-transform: scale(103%);
+        -moz-transform: scale(103%);
+        -ms-transform: scale(103%);
+        -o-transform: scale(103%);
+    }
 }
