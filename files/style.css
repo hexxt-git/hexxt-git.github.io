@@ -27,6 +27,117 @@ body{
     background-size: cover;
     background-position: center;
 }
+#show-list{
+    background-color: rgb(219, 117, 58);
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+    border-radius: 0px 0px 10px 0px;
+    -webkit-border-radius: 0px 0px 10px 0px;
+    -moz-border-radius: 0px 0px 10px 0px;
+    -ms-border-radius: 0px 0px 10px 0px;
+    -o-border-radius: 0px 0px 10px 0px;
+    transform: translateX(300px);
+    -webkit-transform: translateX(300px);
+    -moz-transform: translateX(300px);
+    -ms-transform: translateX(300px);
+    -o-transform: translateX(300px);
+    animation: hide-list 0.5s cubic-bezier( 0, 0.2, 0.8, 1) 0s 1 forwards;
+    -webkit-animation: hide-list 0.5s cubic-bezier( 0, 0.2, 0.8, 1) 0s 1 forwards;
+    box-shadow: #5f3f2563 4px 4px 4px;
+}
+#show-list img{
+    width: 100%;
+}
+#list{
+    background: linear-gradient( 150deg, rgb(226, 143, 70) 10%, rgb(203, 67, 43));
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: -300px;
+    box-shadow: #5f3f2563 4px 4px 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    padding: 10px 0px;
+}
+#show-list:hover{
+    animation: show-list 0.5s cubic-bezier( 0, 0.2, 0.8, 1) 0s 1 forwards;
+    -webkit-animation: show-list 0.5s cubic-bezier( 0, 0.2, 0.8, 1) 0s 1 forwards;
+}
+@keyframes hide-list {
+    0%{
+        transform: translateX(300px);
+        -webkit-transform: translateX(300px);
+        -moz-transform: translateX(300px);
+        -ms-transform: translateX(300px);
+        -o-transform: translateX(300px);
+    }
+    100%{
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+    }
+}
+@keyframes show-list {
+    0%{
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(300px);
+        -webkit-transform: translateX(300px);
+        -moz-transform: translateX(300px);
+        -ms-transform: translateX(300px);
+        -o-transform: translateX(300px);
+    }
+}
+#list-title{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: #67472bd9 2px 2px 3px;
+}
+.list-item{
+    width: 280px;
+    height: 50px;
+    background: #fcb;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(103%);
+    animation: hover-off 0.1s linear 0s 1 forwards;
+    -webkit-animation: hover-off 0.1s linear 0s 1 forwards;
+    -webkit-transform: scale(103%);
+    -moz-transform: scale(103%);
+    -ms-transform: scale(103%);
+    -o-transform: scale(103%);
+    text-shadow: #67472bd9 1px 1px 2px;
+}
+.list-item:hover{
+    animation: hover-on 0.1s linear 0s 1 forwards;
+    -webkit-animation: hover-on 0.1s linear 0s 1 forwards;
+}
 #landing-page{
     margin: 0px;
     height: 100vh;
@@ -484,6 +595,6 @@ body{
     }
 }
 
-#landing-page:focus, #skill-set-page:focus, #about-me-page:focus, #projects-page:focus, #contacts-page:focus{
+#landing-page:focus, #skill-set-page:focus, #about-me-page:focus, #projects-page:focus, #contacts-page:focus, #footer:focus{
     outline: none;
 }
