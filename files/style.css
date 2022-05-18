@@ -431,6 +431,7 @@ body{
     text-shadow: #351b0770 2px 2px 4px;
     user-select: none;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
