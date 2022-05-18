@@ -157,7 +157,7 @@ function loop(){
     
     for ( let i in circles ){
         circles[i].update()
-        if( i < circles.length - 1000 ){
+        if( i < circles.length - 3000 ){
             circles.shift()
         }
     }
