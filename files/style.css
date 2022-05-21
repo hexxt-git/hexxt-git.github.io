@@ -27,7 +27,7 @@ body{
     background-size: cover;
     background-position: center;
 }
-#show-list{
+#nav-list{
     background-color: rgb(219, 117, 58);
     width: 50px;
     height: 50px;
@@ -50,7 +50,7 @@ body{
     -webkit-animation: hide-list 0.5s cubic-bezier( 0, 0.2, 0.8, 1) 0s 1 forwards;
     box-shadow: #5f3f2563 4px 4px 4px;
 }
-#show-list img{
+#nav-list img{
     width: 100%;
 }
 #list{
@@ -67,9 +67,9 @@ body{
     gap: 10px;
     padding: 10px 0px;
 }
-#show-list:hover{
-    animation: show-list 0.5s cubic-bezier( 0, 0.2, 0.8, 1) 0s 1 forwards;
-    -webkit-animation: show-list 0.5s cubic-bezier( 0, 0.2, 0.8, 1) 0s 1 forwards;
+#nav-list:hover{
+    animation: nav-list 0.5s cubic-bezier( 0, 0.2, 0.8, 1) 0s 1 forwards;
+    -webkit-animation: nav-list 0.5s cubic-bezier( 0, 0.2, 0.8, 1) 0s 1 forwards;
 }
 @keyframes hide-list {
     0%{
@@ -87,7 +87,7 @@ body{
         -o-transform: translateX(0px);
     }
 }
-@keyframes show-list {
+@keyframes nav-list {
     0%{
         transform: translateX(0px);
         -webkit-transform: translateX(0px);
@@ -546,7 +546,7 @@ body{
     justify-content: center;
     align-items: center;
 }
-#Icons8 a{
+.link{
     text-decoration: underline #111 2px;
 }
 
