@@ -68,8 +68,8 @@ body{
     padding: 10px 0px;
 }
 .nav-list:hover{
-    animation: show-list 0.1s cubic-bezier( 0, 0.2, 0.8, 1) 0s 1 forwards;
-    -webkit-animation: show-list 0.1s cubic-bezier( 0, 0.2, 0.8, 1) 0s 1 forwards;
+    animation: nav-list 0.5s cubic-bezier( 0, 0.2, 0.8, 1) 0s 1 forwards;
+    -webkit-animation: nav-list 0.5s cubic-bezier( 0, 0.2, 0.8, 1) 0s 1 forwards;
 }
 @keyframes hide-list {
     0%{
@@ -87,7 +87,7 @@ body{
         -o-transform: translateX(0px);
     }
 }
-@keyframes show-list {
+@keyframes nav-list {
     0%{
         transform: translateX(0px);
         -webkit-transform: translateX(0px);
