@@ -182,6 +182,57 @@ body{
     animation: hover-on 0.1s linear 0s 1 forwards;
     -webkit-animation: hover-on 0.1s linear 0s 1 forwards;
 }
+.gallery-page{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-container{
+    height: 80vh;
+    width: 80vw;
+    background-color: #ddc8;
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    padding: 20px;
+    box-shadow: #b9641eaa 8px 8px 8px;
+}
+.gallery-title{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-shadow: #95633bd9 2px 2px 4px;
+    user-select: none;
+}
+.gallery{
+    height: calc(80vh - 50px);
+    display: flex;
+    flex-direction: row;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding-bottom: 5px;
+    gap: 10px;
+}
+.gallery-item{
+    height: 100%;
+}
+.gallery-item img{
+    height: 100%;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+}
 .paragraph-page{
     height: 100vh;
     width: 100%;
@@ -472,6 +523,11 @@ body{
     .six-celled-grid{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr;
+    }
+    .gallery{
+        flex-direction: column;
+        overflow-x: hidden;
+        overflow-y: scroll;
     }
 }
 div:focus {
