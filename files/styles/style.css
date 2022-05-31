@@ -499,6 +499,7 @@ body{
 .footer{
     height: 150px;
     background-color: #ddc8;
+    backdrop-filter: blur(3px);
     font-family: 'Nunito', sans-serif;
     text-align: center;
     font-size: 20px;
