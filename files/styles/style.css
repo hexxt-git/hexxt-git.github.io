@@ -14,6 +14,7 @@ body{
     margin: 0px;
     color: #111;
     user-select: none;
+    background-color: rgb(202, 102, 19);
 }
 #background{
     position: fixed;
@@ -22,10 +23,42 @@ body{
     height: 100vh;
     width: 100vw;
     z-index: -10;
-    background: linear-gradient( 170deg, rgb(238, 181, 121), rgb(206, 90, 36));
+    background: linear-gradient( 170deg, rgb(228, 198, 132), rgb(148, 44, 18));
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+.nav-bar{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    z-index: 2;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.nav-bar-item{
+    font-family: Nunito, sans-serif;
+    font-size: 25px;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #ddcb;
+    backdrop-filter: blur(2px);
+    border-radius: 0px 0px 5px 5px;
+    -webkit-border-radius: 0px 0px 5px 5px;
+    -moz-border-radius: 0px 0px 5px 5px;
+    -ms-border-radius: 0px 0px 5px 5px;
+    -o-border-radius: 0px 0px 5px 5px;
+    box-shadow: #46230749 3px 5px 5px;
+}
+.nav-bar-item:hover{
+    text-decoration: underline solid black 2px;
 }
 .nav-list{
     background-color: rgb(219, 117, 58);
@@ -530,7 +563,7 @@ body{
         overflow-y: scroll;
     }
 }
-div:focus {
+div:focus, footer:focus, a:focus {
     outline: none;
 }
 
