@@ -1,3 +1,4 @@
+// this is an experemental background
 function rdm (max){
     return Math.floor(Math.random()*(max +1));
 };
@@ -40,8 +41,8 @@ c.fillStyle = '#CCC'
 c.strokeStyle = '#CCC'
 
 let mouse = {
-    x: width/2,
-    y: height/2,
+    x: 10000,
+    y: 10000,
     z: false,
     onScreen: false,
 }
@@ -135,7 +136,6 @@ class Object {
 }
 
 let step = 0 ;
-
 function loop(){
 
 //     --loop--
@@ -153,8 +153,8 @@ function loop(){
         canvas.height = height
     }
 
-    while( circles.length < 700 ){
-        circles.push( new Object( rdm(width), rdm(height), 'fillCircle', random( 3, 7), 8, '#fff5', '#fff'+random( 5, 6, true), rdmAround(1, false), rdmAround(1, false) ))
+    while( circles.length < width*height/700 ){
+        circles.push( new Object( rdm(width), rdm(10), 'fillCircle', random( 5, 8), 8, '#fff5', '#fff'+random( 5, 6, true), rdmAround(1, false), gravity() ))
     }
 
     for ( let i in circles){
@@ -183,14 +183,20 @@ function loop(){
 
     c.clearRect( 0, 0, width, height)
     for ( let i in circles ){
-        circles[i].render()
+        circles[i].render();
     }
 
 }
 
+let gravity = () => {
+    return random( 3, 6);
+}
+
 let circles = []
 
-
+while( circles.length < width*height/700 ){
+    circles.push( new Object( rdm(width), rdm(height), 'fillCircle', random( 6, 10), 8, '#fff5', '#fff'+random( 5, 6, true), rdmAround(1, false), gravity() ));
+}
 
 
 
