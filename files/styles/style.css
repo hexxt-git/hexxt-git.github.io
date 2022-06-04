@@ -292,14 +292,14 @@ body{
     justify-content: center;
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
-    font-size: 45px;
+    font-size: 50px;
     text-shadow: #95633bd9 2px 2px 4px;
     user-select: none;
 }
 .paragraph{
     user-select: text;
     text-shadow: #95633bd9 2px 2px 4px;
-    font-size: 30px;
+    font-size: 40px;
 }
 .four-celled-page{
     height: 100vh;
@@ -407,12 +407,12 @@ body{
     -o-border-radius: 5px;
 }
 .four-celled-cell-title{
-    font-size: 32px;
+    font-size: 4vw;
     display: flex;
     align-items: center;
 }
 .four-celled-cell-details{
-    font-size: 25px;
+    font-size: 2.5vw;
     display: flex;
     grid-column: 1/3;
 }
@@ -501,7 +501,7 @@ body{
 }
 .six-celled-cell-title{
     height: 40px;
-    font-size: 22px;
+    font-size: 4vw;
     display: flex;
     justify-content: center;
     align-items: center;
