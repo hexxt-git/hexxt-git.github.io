@@ -501,7 +501,7 @@ body{
 }
 .six-celled-cell-title{
     height: 40px;
-    font-size: 4vw;
+    font-size: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
