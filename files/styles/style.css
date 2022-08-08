@@ -3,7 +3,6 @@
 *{
     scrollbar-width: thin;
     scroll-behavior: smooth;
-
     --color: #111;
     --glass1: #ddc8;
     --glass2: rgba(229, 220, 201, 0.831);
@@ -12,20 +11,24 @@
     --text-shadow: #95633bd9;
     --box-shadows: #20120631;
     --list-btn: rgb(219, 117, 58);
-    --list-gradient: linear-gradient( 150deg, rgb(226, 143, 70) 10%, rgb(203, 67, 43));
+    --list-background: linear-gradient( 150deg, rgb(226, 143, 70) 10%, rgb(203, 67, 43));
     --list-item:#ddc9;
-    /*
-    --color: red;
-    --glass1: green;
-    --glass2: yellow;
-    --glass-shadow: black;
-    --background: blue;
-    --text-shadow: pink;
-    --box-shadows: purple;
-    --list-btn: brown;
-    --list-gradient: aqua;
-    --list-item: lime;
-    border-radius: 0px !important;
+    /*--color: #bbb;
+    --glass1: #22242699;
+    --glass2: #65656988;
+    --glass-shadow: rgba(255, 255, 255, 0);
+    --background: #101015;
+    --text-shadow: rgba(255, 255, 255, 0.2) 0px 0px 2px;
+    --box-shadows: rgba(255, 255, 255, 0.2) 0px 0px 4px;
+    --list-btn: #1a1c1f;
+    --list-background: #1a1c1f;
+    --list-item: #65656988;
+    --filter: invert(0.75);
+    border-radius: 2px !important;
+    -webkit-border-radius: 2px !important;
+    -moz-border-radius: 2px !important;
+    -ms-border-radius: 2px !important;
+    -o-border-radius: 2px !important;
     */
 }
 *:any-link{
@@ -78,7 +81,7 @@ body{
     -moz-border-radius: 0px 0px 5px 5px;
     -ms-border-radius: 0px 0px 5px 5px;
     -o-border-radius: 0px 0px 5px 5px;
-    box-shadow: var(--box-shadows) 3px 5px 5px;
+    box-shadow: var(--box-shadows);
 }
 .nav-bar-item:hover{
     text-decoration: underline solid var(--color) 2px;
@@ -87,10 +90,10 @@ body{
     width: 55px;
 }
 #mode-switch:hover img{
-    height: calc(100% - 8px);
+    height: calc(100% - 18px);
 }
 #mode-switch img{
-    height: calc(100% - 10px);
+    height: calc(100% - 20px);
 }
 .nav-list{
     background-color: var(--list-btn);
@@ -113,19 +116,21 @@ body{
     -o-transform: translateX(300px);
     animation: hide-list 0.1s cubic-bezier( 0, 0.2, 0.8, 1) 0s 1 forwards;
     -webkit-animation: hide-list 0.1s cubic-bezier( 0, 0.2, 0.8, 1) 0s 1 forwards;
-    box-shadow: var(--box-shadows) 4px 4px 4px;
+    box-shadow: var(--box-shadows);
 }
 .nav-list img{
     width: 100%;
+    filter: var(--filter);
+    -webkit-filter: var(--filter);
 }
 .list{
-    background: var(--list-gradient);
+    background: var(--list-background);
     width: 300px;
     height: 100vh;
     position: fixed;
     top: 0px;
     left: -300px;
-    box-shadow: var(--box-shadows) 4px 4px 4px;
+    box-shadow: var(--box-shadows);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,7 +181,7 @@ body{
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 40px;
-    text-shadow: var(--text-shadow) 2px 2px 3px;
+    text-shadow: var(--text-shadow);
 }
 .list-item{
     width: 280px;
@@ -197,7 +202,7 @@ body{
     -moz-transform: scale(103%);
     -ms-transform: scale(103%);
     -o-transform: scale(103%);
-    text-shadow: var(--text-shadow) 1px 1px 2px;
+    text-shadow: var(--text-shadow);
 }
 .list-item:hover{
     animation: hover-on 0.1s linear 0s 1 forwards;
@@ -217,7 +222,7 @@ body{
     text-align: center;
     font-size: 85px;
     font-weight: bold;
-    text-shadow: var(--text-shadow) 4px 4px 6px;
+    text-shadow: var(--text-shadow);
     user-select: none;
     transform: scale(103%);
     animation: hover-off 0.2s linear 0s 1 forwards;
@@ -233,8 +238,8 @@ body{
 }
 .down img{
     width: 85px;
-    filter: drop-shadow( 4px 4px 6px var(--box-shadows)) invert(0.08);
-    -webkit-filter: drop-shadow( 4px 4px 6px var(--box-shadows)) invert(0.08);
+    filter: drop-shadow( var(--box-shadows)) var(--filter);
+    -webkit-filter: drop-shadow( var(--box-shadows)) var(--filter);
     transform: scale(103%);
     animation: hover-off 0.1s linear 0s 1 forwards;
     -webkit-animation: hover-off 0.1s linear 0s 1 forwards;
@@ -265,7 +270,7 @@ body{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     padding: 20px;
-    box-shadow: var(--box-shadows) 8px 8px 8px;
+    box-shadow: var(--box-shadows);
 }
 .gallery-title{
     height: 50px;
@@ -275,7 +280,7 @@ body{
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 35px;
-    text-shadow: var(--text-shadow) 2px 2px 4px;
+    text-shadow: var(--text-shadow);
     user-select: none;
 }
 .gallery{
@@ -316,7 +321,7 @@ body{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     padding: 20px;
-    box-shadow: var(--box-shadows) 8px 8px 8px;
+    box-shadow: var(--box-shadows);
 }
 .paragraph-title{
     height: 80px;
@@ -325,12 +330,12 @@ body{
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 50px;
-    text-shadow: var(--text-shadow) 2px 2px 4px;
+    text-shadow: var(--text-shadow);
     user-select: none;
 }
 .paragraph{
     user-select: text;
-    text-shadow: var(--text-shadow) 2px 2px 4px;
+    text-shadow: var(--text-shadow);
     font-size: 40px;
 }
 .four-celled-page{
@@ -356,7 +361,7 @@ body{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     padding: 20px;
-    box-shadow: var(--box-shadows) 8px 8px 8px;
+    box-shadow: var(--box-shadows);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -376,7 +381,7 @@ body{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
     padding: 20px;
-    box-shadow: var(--box-shadows) 8px 8px 8px;
+    box-shadow: var(--box-shadows);
 }
 .four-celled-title{
     height: 80px;
@@ -385,12 +390,12 @@ body{
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 45px;
-    text-shadow: var(--text-shadow) 2px 2px 4px;
+    text-shadow: var(--text-shadow);
     user-select: none;
 }
 .four-celled{
     user-select: text;
-    text-shadow: var(--text-shadow) 2px 2px 4px;
+    text-shadow: var(--text-shadow);
     font-size: 35px;
     height: calc( 100% - 80px );
     display: grid;
@@ -437,6 +442,8 @@ body{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
+    filter: var(--filter);
+    -webkit-filter: var(--filter);
 }
 .four-celled-cell-title{
     font-size: 4vw;
@@ -471,7 +478,7 @@ body{
     -o-border-radius: 10px;
     padding: 10px 20px 20px 20px;
     overflow: hidden;
-    box-shadow: var(--box-shadows) 8px 8px 8px;
+    box-shadow: var(--box-shadows);
 }
 .six-celled-title{
     height: 80px;
@@ -480,7 +487,7 @@ body{
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 45px;
-    text-shadow: var(--text-shadow) 2px 2px 4px;
+    text-shadow: var(--text-shadow);
     user-select: none;
 }
 .six-celled-grid{
