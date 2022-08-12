@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 *{
+    
     scrollbar-width: thin;
     scroll-behavior: smooth;
     --color: #111;
