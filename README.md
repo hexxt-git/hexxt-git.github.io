@@ -1,8 +1,8 @@
-yo
+hello
 
 this is my gihub profile
 
-i code html css and javascript no APIs
+i code html css and javascript no APIs or libraries yet
 
 i also do python now
 
