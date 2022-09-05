@@ -1,36 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
 *{
+
+    /*
     
-    scrollbar-width: thin;
-    scroll-behavior: smooth;
-    --color: #111;
-    --glass1: #ddc8;
-    --glass2: rgba(229, 220, 201, 0.831);
-    --glass-shadow: #7e675486;
-    --background: linear-gradient( 170deg, rgb(228, 198, 132), rgb(148, 44, 18));
-    --text-shadow: #95633bd9;
-    --box-shadows: #20120631;
-    --list-btn: rgb(219, 117, 58);
-    --list-background: linear-gradient( 150deg, rgb(226, 143, 70) 10%, rgb(203, 67, 43));
-    --list-item:#ddc9;
-    /*--color: #bbb;
-    --glass1: #22242699;
-    --glass2: #65656988;
-    --glass-shadow: rgba(255, 255, 255, 0);
-    --background: #101015;
-    --text-shadow: rgba(255, 255, 255, 0.2) 0px 0px 2px;
-    --box-shadows: rgba(255, 255, 255, 0.2) 0px 0px 4px;
-    --list-btn: #1a1c1f;
-    --list-background: #1a1c1f;
-    --list-item: #65656988;
-    --filter: invert(0.75);
-    border-radius: 2px !important;
-    -webkit-border-radius: 2px !important;
-    -moz-border-radius: 2px !important;
-    -ms-border-radius: 2px !important;
-    -o-border-radius: 2px !important;
     */
+    
 }
 *:any-link{
     color: var(--color);
@@ -76,7 +51,7 @@ body{
     align-items: center;
     cursor: pointer;
     background-color: var(--glass2);
-    backdrop-filter: blur(2px);
+    backdrop-filter: var(--glass-filter);
     border-radius: 0px 0px 5px 5px;
     -webkit-border-radius: 0px 0px 5px 5px;
     -moz-border-radius: 0px 0px 5px 5px;
@@ -90,11 +65,14 @@ body{
 #mode-switch{
     width: 55px;
 }
-#mode-switch:hover img{
-    height: calc(100% - 18px);
-}
 #mode-switch img{
     height: calc(100% - 20px);
+    filter: var(--invert);
+}
+#mode-switch:hover img{
+    height: calc(100% - 18px);
+    filter: var(--invert);
+    -webkit-filter: var(--invert);
 }
 .nav-list{
     background-color: var(--list-btn);
@@ -121,8 +99,8 @@ body{
 }
 .nav-list img{
     width: 100%;
-    filter: var(--filter);
-    -webkit-filter: var(--filter);
+    filter: var(--invert);
+    -webkit-filter: var(--invert);
 }
 .list{
     background: var(--list-background);
@@ -239,8 +217,8 @@ body{
 }
 .down img{
     width: 85px;
-    filter: drop-shadow( var(--box-shadows)) var(--filter);
-    -webkit-filter: drop-shadow( var(--box-shadows)) var(--filter);
+    filter: drop-shadow( var(--box-shadows)) var(--invert);
+    -webkit-filter: drop-shadow( var(--box-shadows)) var(--invert);
     transform: scale(103%);
     animation: hover-off 0.1s linear 0s 1 forwards;
     -webkit-animation: hover-off 0.1s linear 0s 1 forwards;
@@ -264,7 +242,7 @@ body{
     height: 80vh;
     width: 80vw;
     background-color: var(--glass1);
-    backdrop-filter: blur(2px);
+    backdrop-filter: var(--glass-filter);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -315,7 +293,7 @@ body{
     height: 75vh;
     width: 80vw;
     background-color: var(--glass1);
-    backdrop-filter: blur(2px);
+    backdrop-filter: var(--glass-filter);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -355,7 +333,7 @@ body{
 }
 .image-container{
     background-color: var(--glass1);
-    backdrop-filter: blur(2px);
+    backdrop-filter: var(--glass-filter);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -375,7 +353,7 @@ body{
     height: 75vh;
     width: 80vw;
     background-color: var(--glass1);
-    backdrop-filter: blur(2px);
+    backdrop-filter: var(--glass-filter);
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -443,8 +421,8 @@ body{
     -moz-border-radius: 5px;
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
-    filter: var(--filter);
-    -webkit-filter: var(--filter);
+    filter: var(--invert);
+    -webkit-filter: var(--invert);
 }
 .four-celled-cell-title{
     font-size: 4vw;
@@ -469,7 +447,7 @@ body{
 }
 .six-celled{
     background-color: var(--glass1);
-    backdrop-filter: blur(2px);
+    backdrop-filter: var(--glass-filter);
     width: 80vw;
     height: 75vh;
     border-radius: 10px;
@@ -564,7 +542,7 @@ body{
 .footer{
     height: 150px;
     background-color: var(--glass1);
-    backdrop-filter: blur(3px);
+    backdrop-filter: var(--glass-filter);
     font-family: 'Nunito', sans-serif;
     text-align: center;
     font-size: 22px;
