@@ -1,5 +1,5 @@
 function updateMode(){
-    if(mode%2){
+    if(mode%2 == 0){
         document.querySelector('*').style = `
             scrollbar-width: thin;
             scroll-behavior: smooth;
