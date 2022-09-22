@@ -9,6 +9,7 @@ i also do python now
 i will be putting anything interesting i make in here
 
 visit my personal website <a href="https://9eed.github.io/9EED/"> here </a>.
-
-
+<br>
+<br>
+<br>
 scince senior year just started, i wont be coding as much.
