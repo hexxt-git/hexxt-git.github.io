@@ -1,15 +1,11 @@
-hello
+welcome my gihub profile
 
-this is my gihub profile
+I'm 9EED.
 
-i code html css and javascript no APIs or libraries yet
+currently a highschool senior.
 
-i also do python now
+I do HTML, CSS, JavaScript, Godot, Python and a little c++..
 
-i will be putting anything interesting i make in here
+I will be putting anything interesting i make in here.
 
-visit my personal website <a href="https://9eed.github.io/9EED/"> here </a>.
-<br>
-<br>
-<br>
-scince senior year just started, i wont be coding as much.
+my contacts are <a href="https://9eed.github.io/9EED/"> here ✨</a>
