@@ -503,7 +503,7 @@ body{
     -webkit-animation: hover-on 0.1s linear 0s 1 forwards;
 }
 .six-celled-cell-image-holder{
-    height: calc(100% - 40px);
+    height: calc(100% - 50px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -518,17 +518,8 @@ body{
     -o-border-radius: 5px;
 }
 .six-celled-cell-title{
-    height: 40px;
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-.long-title{
-    height: 40px;
-    font-size: 15px;
-    font-weight: bolder;
+    height: 50px;
+    font-size: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -604,6 +595,14 @@ body{
         flex-direction: column;
         overflow-x: hidden;
         overflow-y: scroll;
+    }
+    .gallery-item{
+        height: auto;
+        width: 100%;
+    }
+    .gallery-item img{
+        width: 100%;
+        height: auto;
     }
 }
 div:focus, footer:focus, a:focus {
