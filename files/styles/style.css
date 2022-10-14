@@ -93,8 +93,8 @@ body{
     -moz-transform: translateX(300px);
     -ms-transform: translateX(300px);
     -o-transform: translateX(300px);
-    animation: hide-list 0.1s cubic-bezier( 0, 0.2, 0.8, 1) 0s 1 forwards;
-    -webkit-animation: hide-list 0.1s cubic-bezier( 0, 0.2, 0.8, 1) 0s 1 forwards;
+    animation: hide-list 0.4s cubic-bezier( 0, 0.2, 0.8, 1) 0s 1 forwards;
+    -webkit-animation: hide-list 0.4s cubic-bezier( 0, 0.2, 0.8, 1) 0s 1 forwards;
     box-shadow: var(--box-shadows);
 }
 .nav-list img{
