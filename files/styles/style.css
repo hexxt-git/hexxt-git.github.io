@@ -508,6 +508,20 @@ body{
     align-items: center;
     justify-content: center;
 }
+.six-celled-cell-iframe-holder{
+    height: calc(100% - 50px);
+}
+.frame{
+    width: calc(300% - 10px);
+    height: 300%;
+    -ms-zoom: 0.333;
+    -moz-transform: scale(0.333);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.333);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.333);
+    -webkit-transform-origin: 0 0;
+}
 .six-celled-cell-image{
     max-width: 100%;
     max-height: 100%;
