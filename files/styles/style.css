@@ -514,13 +514,12 @@ body{
 .frame{
     width: calc(300% - 10px);
     height: 300%;
-    -ms-zoom: 0.333;
-    -moz-transform: scale(0.333);
-    -moz-transform-origin: 0 0;
-    -o-transform: scale(0.333);
-    -o-transform-origin: 0 0;
-    -webkit-transform: scale(0.333);
-    -webkit-transform-origin: 0 0;
+    transform: scale(0.3333);
+    -webkit-transform: scale(0.3333);
+    -moz-transform: scale(0.3333);
+    -ms-transform: scale(0.3333);
+    -o-transform: scale(0.3333);
+    transform-origin: 0 0;
 }
 .six-celled-cell-image{
     max-width: 100%;
