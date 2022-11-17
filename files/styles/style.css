@@ -521,6 +521,16 @@ body{
     -o-transform: scale(0.3333);
     transform-origin: 0 0;
 }
+#all{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Nunito;
+    font-size: 30px;
+}
+#all:hover{
+    text-decoration: underline;
+}
 .six-celled-cell-image{
     max-width: 100%;
     max-height: 100%;
