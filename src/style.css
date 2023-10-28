@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+    background-color: #0E0E0E;
+    font-family: roboto;
+    margin: 0;
+    padding-top: calc(45px + 20px);
+    color: white;
+}
+#nav-bar{
+    position: fixed;
+    width: 100%;
+    height: 45px;
+    padding-top: 20px;
+    top: 0px;
+    left: 0px;
+    background-color: #0E0E0E;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1;
+}
+#home-nav{
+    margin-right: auto;
+    border: none;
+    padding-left: 20px;
+    width: 30px;
+}
+#home-nav{
+    filter: invert(90%);
+    -webkit-filter: invert(90%);
+}
+.nav-item{
+    width: 100px;
+    color: white;
+    text-decoration: none;
+    border-left: 1px solid #e74a4a;
+    padding-left: 5px;
+    letter-spacing: 1px;
+    flex-shrink: 1;
+}
+.nav-item:hover{
+    border-left-width: 2px;
+    padding-left: 4px;
+}
+
+#landing{
+    height: calc(100vh - 45px - 20px);
+    width: 100%;
+    background-color: #111111;
+    background: radial-gradient(circle, #0E0E0E 40vh, #111111 40px);
+    position: relative;
+}
+#cut-out{
+    position: absolute;
+    bottom: 0px;
+    left: calc(50% - 30vh);
+    height: 60vh;
+    filter: saturate(0.5) contrast(1.1);
+    -webkit-filter: saturate(0.5) contrast(1.1);
+}
+#landing-left{
+    position: absolute;
+    top: -50px;
+    left: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#landing-left div{
+    max-width: 50%;
+}
+#landing-name{
+    font-size: 40px;
+    line-height: 38px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+}
+#landing-name span{
+    color: #e23535;
+    font-size: 50px;
+}
+#landing-left hr{
+    border-color: #e23535;
+    width: 60px;
+    transform: translateX(-120px);
+    -webkit-transform: translateX(-120px);
+    -moz-transform: translateX(-120px);
+    -ms-transform: translateX(-120px);
+    -o-transform: translateX(-120px);
+}
+#landing-contacts{
+    color: #e74a4a;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+#landing-contacts :any-link{
+    color: #CCC;
+}
+#landing-more-contacts{
+    border: 2px solid #e23535;
+    color: #e74a4a;
+    width: 90px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+#landing-right{
+    position: absolute;
+    top: -50px;
+    left: calc(50% + 150px);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
