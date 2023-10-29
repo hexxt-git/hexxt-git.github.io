@@ -1,10 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    --white-text: #DDD;
+    --gray-text: #888;
+    --accent: #e23535;
+    --accent-lighter: #e74a4a;
+    --background: #151515;
+    --background-dark: #121212;
+}
 body{
-    background-color: #0E0E0E;
+    background-color: var(--background-dark);
     font-family: roboto;
     margin: 0;
     padding-top: calc(45px + 20px);
-    color: white;
+    color: var(--white-text);
 }
 #nav-bar{
     position: fixed;
@@ -13,7 +20,7 @@ body{
     padding-top: 20px;
     top: 0px;
     left: 0px;
-    background-color: #0E0E0E;
+    background-color: var(--background-dark);
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -31,9 +38,9 @@ body{
 }
 .nav-item{
     width: 100px;
-    color: white;
+    color: var(--white-text);
     text-decoration: none;
-    border-left: 1px solid #e74a4a;
+    border-left: 1px solid var(--accent-lighter);
     padding-left: 5px;
     letter-spacing: 1px;
     flex-shrink: 1;
@@ -42,21 +49,23 @@ body{
     border-left-width: 2px;
     padding-left: 4px;
 }
-
 #landing{
     height: calc(100vh - 45px - 20px);
     width: 100%;
-    background-color: #111111;
-    background: radial-gradient(circle, #0E0E0E 40vh, #111111 40px);
+    background-color: var(--background);
+    background: radial-gradient(circle, var(--background-dark) 40vh, var(--background) 40px);
     position: relative;
 }
 #cut-out{
     position: absolute;
     bottom: 0px;
-    left: calc(50% - 30vh);
+    left: calc(50% - 60vh / 2);
     height: 60vh;
     filter: saturate(0.5) contrast(1.1);
     -webkit-filter: saturate(0.5) contrast(1.1);
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-user-drag: none;
 }
 #landing-left{
     position: absolute;
@@ -66,46 +75,47 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    font-size: 15px;
 }
 #landing-left div{
     max-width: 50%;
 }
 #landing-name{
-    font-size: 40px;
+    font-size: 38px;
+    font-weight: 600;
     line-height: 38px;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin-bottom: 15px;
 }
 #landing-name span{
-    color: #e23535;
-    font-size: 50px;
+    color: var(--accent);
 }
 #landing-left hr{
-    border-color: #e23535;
-    width: 60px;
-    transform: translateX(-120px);
-    -webkit-transform: translateX(-120px);
-    -moz-transform: translateX(-120px);
-    -ms-transform: translateX(-120px);
-    -o-transform: translateX(-120px);
+    border-color: var(--accent);
+    width: 95px;
+    border-style: solid;
+    border-width: 2px;
+    margin: 15px 0px 10px 15px;
 }
 #landing-contacts{
-    color: #e74a4a;
+    color: var(--accent-lighter);
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
 }
 #landing-contacts :any-link{
-    color: #CCC;
+    color: var(--gray-text);
 }
 #landing-more-contacts{
-    border: 2px solid #e23535;
-    color: #e74a4a;
-    width: 90px;
-    height: 30px;
+    border: 2px solid var(--accent);
+    color: var(--accent-lighter);
+    width: 95px;
+    height: 35px;
     margin-top: 15px;
     margin-left: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #landing-right{
