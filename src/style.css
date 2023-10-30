@@ -13,6 +13,7 @@ body{
     margin-bottom: 50px;
     padding-top: calc(45px + 20px);
     color: var(--white-text);
+    overflow-x: hidden;
 }
 #nav-bar{
     position: fixed;
@@ -26,6 +27,7 @@ body{
     justify-content: flex-end;
     align-items: center;
     z-index: 1;
+    font-size: 20px;
 }
 #home-nav{
     margin-right: auto;
@@ -33,12 +35,8 @@ body{
     padding-left: 20px;
     width: 30px;
 }
-#home-nav{
-    filter: invert(90%);
-    -webkit-filter: invert(90%);
-}
 .nav-item{
-    width: 100px;
+    width: 120px;
     color: var(--white-text);
     text-decoration: none;
     border-left: 1px solid var(--accent);
@@ -73,10 +71,8 @@ body{
     top: -50px;
     left: 100px;
     height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     font-size: 15px;
+    padding-top: 150px;
 }
 #landing-left div{
     max-width: 50%;
@@ -115,7 +111,6 @@ body{
 #landing-contacts :any-link:hover{
     color: var(--accent);
 }
-
 #landing-more-contacts{
     border: 3px solid var(--accent-darker);
     color: var(--accent);
@@ -139,25 +134,22 @@ body{
     top: -70px;
     left: calc(50% + 200px);
     height: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-right: 100px;
+    padding-top: 150px;
+    max-width: 360px;
 }
 #landing-introduction{
     color: var(--accent-darker);
     letter-spacing: 2px;
     font-variant: small-caps;
     font-size: 18px;
-    margin-bottom: 5px;
+    padding-left: 10px;
 }
 #landing-paragraph-title{
-    font-size: 20px;
+    font-size: 25px;
     margin-bottom: 5px;
 }
 #landing-paragraph-title span{
     color: var(--accent);
-    font-weight: 100;
 }
 #landing-paragraph{
     font-size: 15px;
@@ -166,7 +158,7 @@ body{
     color: var(--gray-text);
     margin-bottom: 10px;
 }
-#landing-paragraph a{
+#landing-paragraph a:any-link{
     color: var(--white-text);
     font-variant: small-caps;
     font-size: 18px;
@@ -176,7 +168,7 @@ body{
     -ms-transition: color 0.1s ease;
     -o-transition: color 0.1s ease;
 }
-#landing-paragraph a:hover{
+#landing-paragraph a:any-link:hover{
     color: var(--accent);
 }
 #landing-learn-more{
@@ -184,7 +176,7 @@ body{
     color: var(--accent);
     width: 120px;
     height: 40px;
-    margin-left: 15px;
+    margin-left: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -235,11 +227,43 @@ body{
     padding: 0px 20px;
 }
 .card{
-    height: 250px;
+    height: 230px;
     width: auto;
-    min-width: 160px;
-    max-width: 200px;
+    min-width: 150px;
+    max-width: 230px;
+    padding: 10px;
     flex-grow: 1;
     flex-shrink: 1;
     background-color: var(--background);
+}
+.card-image{
+    height: 100px;
+    width: 100px;
+    margin: 20px auto 10px auto;
+    display: block;
+}
+.card-title{
+    font-size: 18px;
+    color: var(--accent-darker);
+    margin-bottom: 5px;
+    text-align: center;
+}
+.card-description{
+    font-size: 12px;
+    color: var(--gray-text);
+    text-align: center;
+    /* i could eliminate the use of <br> breaks
+    by limiting the max-width to 90% or something    
+    */
+}
+.card-description a:any-link{
+    color: var(--gray-text);
+    transition: color 0.1s ease;
+    -webkit-transition: color 0.1s ease;
+    -moz-transition: color 0.1s ease;
+    -ms-transition: color 0.1s ease;
+    -o-transition: color 0.1s ease;
+}
+.card-description a:any-link:hover{
+    color: var(--accent);
 }
