@@ -7,11 +7,22 @@
     --background-dark: #121212;
 
 }
+*::selection {
+    background: var(--accent);
+    color: #111;
+}
+*::-moz-selection {
+    background: var(--accent);
+    color: #111;
+}
+*::-webkit-selection {
+    background: var(--accent);
+    color: #000;
+}
 body{
     background-color: var(--background-dark);
     font-family: roboto;
     margin: 0;
-    margin-bottom: 50px;
     padding-top: calc(45px + 20px);
     color: var(--white-text);
     overflow-x: hidden;
@@ -273,12 +284,12 @@ body{
     color: var(--accent);
 }
 
-#latest-works{
+#latest-projects{
     background-color: var(--background);
     padding: 35px 20px 45px 20px;
     max-width: 100vw;
 }
-#latest-works-title{
+#latest-projects-title{
     font-size: 20px;
     margin-bottom: 5px;
     color: var(--accent-darker);
@@ -286,12 +297,12 @@ body{
     text-align: center;
     letter-spacing: 3px;
 }
-#latest-works-description{
+#latest-projects-description{
     color: var(--gray-text);
     text-align: center;
     margin-bottom: 10px;
 }
-#latest-works-collection{
+#latest-projects-collection{
     display: grid;
     grid-template-rows: repeat(3, 150px);
     grid-template-columns: repeat(3, 350px);
@@ -299,42 +310,42 @@ body{
     width: auto;
     max-width: calc(100vw - 20px);
 }
-.work-large {
+.project-large {
     grid-row: 1 / 4;
 }
-.work-large, .work-small{
+.project-large, .project-small{
     background: var(--background-dark);
     margin: 0px 20px 15px 0px;
     overflow: hidden;
     position: relative;
 }
-.work-image{
-    filter: grayscale(0.8);
-    -webkit-filter: grayscale(0.8);
+.project-image{
+    filter: grayscale(0.7);
+    -webkit-filter: grayscale(0.7);
     transition: 0.2s filter ease-in-out;
     -webkit-transition: 0.2s filter ease-in-out;
     -moz-transition: 0.2s filter ease-in-out;
     -ms-transition: 0.2s filter ease-in-out;
     -o-transition: 0.2s filter ease-in-out;
 }
-.work-image:hover{
-    filter: grayscale(0.3);
-    -webkit-filter: grayscale(0.3);
+.project-image:hover{
+    filter: grayscale(0.2);
+    -webkit-filter: grayscale(0.2);
 }
-.work-large img{
+.project-large img{
     max-width: 100%;
 }
-.work-small{
+.project-small{
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-columns: 150px 1fr;
 }
-.work-small .work-image{
+.project-small .project-image{
     grid-row: 1 / 3;
     grid-column: 1 / 2;
     overflow: hidden;
 }
-.work-small img{
+.project-small img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -347,13 +358,13 @@ body{
     padding: 5px 10px;
     font-size: 13px;
 }
-.work-title{
+.project-title{
     font-size: 15px;
     color: var(--accent-darker);
     text-align: center;
     padding-top: 15px;
 }
-.work-description{
+.project-description{
     font-size: 12px;
     color: var(--gray-text);
     text-align: left;
@@ -361,7 +372,7 @@ body{
     line-height: 14px;
     overflow-y: auto;
 }
-.work-description a img{
+.project-description a img{
     width: 12px;
     height: 12px;
     transform: translate(0px, 2px);
@@ -370,7 +381,7 @@ body{
     -ms-transform: translate(0px, 2px);
     -o-transform: translate(0px, 2px);
 }
-.work-description a:any-link{
+.project-description a:any-link{
     color: var(--gray-text);
     transition: color 0.1s ease-in-out;
     -webkit-transition: color 0.1s ease-in-out;
@@ -378,7 +389,7 @@ body{
     -ms-transition: color 0.1s ease-in-out;
     -o-transition: color 0.1s ease-in-out;
 }
-.work-description a:any-link:hover{
+.project-description a:any-link:hover{
     color: var(--accent);
 }
 
@@ -444,32 +455,51 @@ body{
     -o-transform: scale(0.65);
 }
 
-
+#footer{
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+#footer div a:any-link{
+    color: var(--white-text);
+    transition: color 0.1s ease-in-out;
+    -webkit-transition: color 0.1s ease-in-out;
+    -moz-transition: color 0.1s ease-in-out;
+    -ms-transition: color 0.1s ease-in-out;
+    -o-transition: color 0.1s ease-in-out;
+}
+#footer div a:hover{
+    color: var(--accent-darker)
+}
 
 
 
 @media (max-width: 1050px), (orientation: portrait) {
-    #latest-works-collection{
+    #latest-projects-collection{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 150px);
     }
-    .work-small, .work-large{
+    .project-small, .project-large{
         margin: 5px 0px;
     }
-    .work-large{
+    .project-large{
         grid-row: auto;
     }
-    .work-large{
+    .project-large{
         display: grid;
         grid-template-rows: auto 1fr;
         grid-template-columns: 150px 1fr;
     }
-    .work-large .work-image{
+    .project-large .project-image{
         grid-row: 1 / 3;
         grid-column: 1 / 2;
         overflow: hidden;
     }
-    .work-large img{
+    .project-large img{
         width: 100%;
         height: 100%;
         object-fit: cover;
