@@ -5,7 +5,7 @@
     --accent: #ec5757;
     --background: #151515;
     --background-dark: #121212;
-
+    scroll-behavior: smooth;
 }
 *::selection {
     background: var(--accent);
@@ -27,7 +27,6 @@ body{
     color: var(--white-text);
     overflow-x: hidden;
     max-width: 100vw;
-    scroll-behavior: smooth;
 }
 #nav-bar{
     position: fixed;
@@ -114,15 +113,25 @@ body{
     color: var(--accent);
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 3px;
+    transform: translate(-3px);
+    -webkit-transform: translate(-3px);
+    -moz-transform: translate(-3px);
+    -ms-transform: translate(-3px);
+    -o-transform: translate(-3px);
 }
 #landing-contacts :any-link{
     color: var(--gray-text);
+    transform: translateX(2px); /*scuffed code*/
     transition: color 0.1s ease-in-out;
     -webkit-transition: color 0.1s ease-in-out;
     -moz-transition: color 0.1s ease-in-out;
     -ms-transition: color 0.1s ease-in-out;
     -o-transition: color 0.1s ease-in-out;
+    -webkit-transform: translateX(2px);
+    -moz-transform: translateX(2px);
+    -ms-transform: translateX(2px);
+    -o-transform: translateX(2px);
 }
 #landing-contacts :any-link:hover{
     color: var(--accent);
@@ -144,7 +153,6 @@ body{
     font-weight: 600;
     letter-spacing: 2px;
 }
-
 #landing-right{
     position: absolute;
     top: -70px;
@@ -213,7 +221,6 @@ body{
 #landing-scroller:hover{
     text-decoration: underline;
 }
-
 #cards-page{
     max-width: 100vw;
     overflow: hidden;
@@ -283,7 +290,6 @@ body{
 .card-description a:any-link:hover{
     color: var(--accent);
 }
-
 #latest-projects{
     background-color: var(--background);
     padding: 35px 20px 45px 20px;
@@ -392,7 +398,6 @@ body{
 .project-description a:any-link:hover{
     color: var(--accent);
 }
-
 #contacts-page{
     padding: 10px;
 }
@@ -454,7 +459,6 @@ body{
     -ms-transform: scale(0.65);
     -o-transform: scale(0.65);
 }
-
 #footer{
     background-color: var(--background);
     display: flex;
@@ -475,7 +479,6 @@ body{
 #footer div a:hover{
     color: var(--accent-darker)
 }
-
 
 
 @media (max-width: 1050px), (orientation: portrait) {
