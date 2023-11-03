@@ -273,7 +273,6 @@ body{
 }
 .card-title{
     color: var(--accent-darker);
-    font-weight: 600;
     font-size: 14px;
     text-align: center;
     letter-spacing: 1px;
@@ -319,7 +318,6 @@ body{
     grid-template-columns: 280px 280px 330px;
     justify-content: center;
     width: auto;
-    max-width: calc(100vw - 20px);
 }
 .project-large {
     grid-row: 1 / 4;
@@ -518,25 +516,25 @@ body{
 
 @media (orientation: portrait){
     body{
-        padding-top: 150px;
+        padding-top: 60px;
     }
     #nav-bar{
-        height: 140px;
-        padding-top: 0px;
-        border-bottom-width: 10px;
+        height: 50px;
+        padding-top: 5px;
+        border-bottom-width: 5px;
     }
     .nav-item{
         display: none;
     }
     #home-nav{
         display: block;
-        padding-left: 50px;
+        padding-left: 10px;
     }
     #home-nav img{
-        width: 80px;
+        width: 32px;
     }
     #landing{
-        height: calc(100vh - 150px);
+        height: calc(100vh - 60px);
         background: radial-gradient(circle, var(--background-dark) 30vh, var(--background) 30px);
     }
     #landing-left, #landing-right{
@@ -548,78 +546,87 @@ body{
     }
     #landing-mobile{
         display: block;
-        padding: 50px;
+        padding: 15px;
+        padding-top: 30px;
         position: relative;
-        top: 30px;
         z-index: 1;
     }
     #landing-name{
-        font-size: 90px;
-        line-height: 80px;
+        font-size: 30px;
+        line-height: 30px;
     }
     #landing-name span{
-        font-size: 120px;
+        font-size: 35px;
     }
     #landing-mobile hr{
-        border: solid 5px var(--accent-darker);
-        width: 200px;
-        margin: 35px 0px 20px 45px;
+        border: solid 2px var(--accent-darker);
+        width: 150px;
+        margin: 15px 0px 10px 10px;
     }
     #landing-paragraph{
-        font-size: 55px;
-        line-height: 55px;
-        padding-right: 110px;
+        font-size: 20px;
+        line-height: 20px;
         text-shadow: #000 5px 5px 8px;
     }
     #landing-paragraph span{
         color: var(--accent);
     }
     #landing-paragraph a:any-link{
-        font-size: 55px;
-        line-height: 60px;
+        font-size: 20px;
+        line-height: 20px;
         font-variant: normal;
         color: var(--gray-text);
     }
     #landing-scroller{
-        font-size: 60px;
-        right: 55px;
-        bottom: 40px;
+        font-size: 20px;
+        right: 20px;
+        bottom: 10px;
     }
     .cards-title{
-        font-size: 50px;
+        font-size: 25px;
+        margin-bottom: 0px;
     }
     .card-collection-description{
-        font-size: 38px;
+        font-size: 16px;
     }
     .cards-collection{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
-        padding: 0px 50px;
+        padding: 0px 10px;
+        gap: 10px;
     }
     .card{
         width: auto;
         max-width: none;
-        height: 430px;
-        padding: 20px;
+        height: 210px;
+        padding: 10px;
+        overflow-y: auto;
     }
     .card-image{
-        width: 160px;
-        height: 160px;
-        margin-bottom: 40px;
+        width: 70px;
+        height: 70px;
+        margin: 10px auto;
     }
     .card-title{
-        font-size: 35px;
+        font-size: 18px;
+        margin-bottom: 0px;
     }
     .card-description{
-        font-size: 28px;
+        font-size: 13px;
+    }
+    #latest-projects{
+        padding-top: 10px;
+    }
+    #latest-projects-title{
+        font-size: 22px;
     }
     #latest-projects-collection{
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(5, 400px);
+        grid-template-rows: repeat(5, 200px);
     }
     .project-small, .project-large{
-        margin: 15px 0px;
+        margin: 8px 0px;
     }
     .project-small, .project-large{
         grid-column: auto;
@@ -628,7 +635,7 @@ body{
     .project-large, .project-small{
         display: grid;
         grid-template-rows: auto 1fr;
-        grid-template-columns: 400px 1fr;
+        grid-template-columns: 150px 1fr;
     }
     .project-image{
         grid-row: 1 / 3;
@@ -640,6 +647,37 @@ body{
         width: 100%;
         height: 100%;
         object-fit: cover;
-        -webkit-filter: none;
-}
+    }
+    .project-title{
+        font-size: 20px;
+        padding-top: 5px;
+    }
+    .project-description{
+        font-size: 18px;
+        text-align: start;
+        line-height: 18px;
+    }
+    .project-description a img{
+        width: 17px;
+        height: 17px;
+        transform: translate(-3px, 2px);
+        -webkit-transform: translate(-3px, 2px);
+        -moz-transform: translate(-3px, 2px);
+        -ms-transform: translate(-3px, 2px);
+        -o-transform: translate(-3px, 2px);
+    }
+    #contacts-title{
+        font-size: 22px;
+        margin-bottom: 0px;
+    }
+    #contacts-collection{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        padding: 0px;
+        width: 100%;
+    }
+    .contact{
+        width: auto;
+    }
 }
