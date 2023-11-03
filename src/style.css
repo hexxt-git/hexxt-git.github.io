@@ -8,6 +8,8 @@
 }
 html{
     scroll-behavior: smooth;
+    max-width: 100vw;
+    overflow-x: hidden;
 }
 *::selection {
     background: var(--accent);
@@ -27,13 +29,12 @@ body{
     margin: 0;
     padding-top: calc(45px + 20px);
     color: var(--white-text);
-    overflow-x: hidden;
     max-width: 100vw;
+    overflow-x: hidden;
 }
 #nav-bar{
     position: fixed;
-    width: 100%;
-    max-width: 100vw;
+    width: calc(100vw - 1px);
     height: 45px;
     padding-top: 20px;
     top: 0px;
@@ -543,7 +544,12 @@ body{
     #cut-out{
         left: calc(50% - 60vh / 2);
         height: 60vh;
-    }
+        transform: translateX(-15px);
+        -webkit-transform: translateX(-15px);
+        -moz-transform: translateX(-15px);
+        -ms-transform: translateX(-15px);
+        -o-transform: translateX(-15px);
+}
     #landing-mobile{
         display: block;
         padding: 15px;
@@ -666,6 +672,9 @@ body{
         -ms-transform: translate(-3px, 2px);
         -o-transform: translate(-3px, 2px);
     }
+    #contacts-page{
+        padding-bottom: 0px;
+    }
     #contacts-title{
         font-size: 22px;
         margin-bottom: 0px;
@@ -679,5 +688,6 @@ body{
     }
     .contact{
         width: auto;
+        margin-bottom: 5px;
     }
 }
