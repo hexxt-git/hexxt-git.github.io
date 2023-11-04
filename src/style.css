@@ -51,9 +51,10 @@ body{
     margin-right: auto;
     border: none;
     padding-left: 20px;
-}
-#home-nav{
-    width: 32px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 .nav-item{
     width: 120px;
@@ -316,7 +317,7 @@ body{
 #latest-projects-collection{
     display: grid;
     grid-template-rows: repeat(3, 140px);
-    grid-template-columns: 280px 280px 330px;
+    grid-template-columns: 280px 280px 350px;
     justify-content: center;
     width: auto;
 }
@@ -376,10 +377,12 @@ body{
     padding-top: 15px;
     letter-spacing: 1px;
 }
+.project-large .project-description{
+    text-align: justify;
+}
 .project-description{
     font-size: 12px;
     color: var(--gray-text);
-    text-align: justify;
     padding: 7px;
     line-height: 14px;
     overflow-y: auto;
@@ -648,7 +651,7 @@ body{
         grid-column: 1 / 2;
         filter: grayscale(0.3);
         -webkit-filter: grayscale(0.3);
-}
+    }
     .project-large img, .project-small img{
         width: 100%;
         height: 100%;
