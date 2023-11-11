@@ -563,6 +563,7 @@ body{
     #landing-name{
         font-size: 30px;
         line-height: 30px;
+        text-shadow: #000 5px 5px 8px;
     }
     #landing-name span{
         font-size: 35px;
@@ -636,8 +637,6 @@ body{
     }
     .project-small, .project-large{
         margin: 8px 0px;
-    }
-    .project-small, .project-large{
         grid-column: auto;
         grid-row: auto;
     }
@@ -663,8 +662,8 @@ body{
     }
     .project-description{
         font-size: 18px;
-        text-align: start;
         line-height: 18px;
+        text-align: left !important;
     }
     .project-description a img{
         width: 17px;
