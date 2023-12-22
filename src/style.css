@@ -45,7 +45,7 @@ body{
     align-items: center;
     z-index: 5;
     font-size: 20px;
-    border-bottom: #111 solid 1px;
+    border-bottom: #111 solid 3px;
 }
 #home-nav{
     margin-right: auto;
@@ -60,14 +60,14 @@ body{
     width: 120px;
     color: var(--white-text);
     text-decoration: none;
-    border-left: 1px solid var(--accent);
+    border-left: 2px solid var(--accent);
     padding-left: 5px;
+    padding-top: 5px;
     letter-spacing: 1px;
     flex-shrink: 1;
 }
 .nav-item:hover{
-    border-left-width: 2px;
-    padding-left: 4px;
+    text-decoration: underline var(--accent);
 }
 #landing{
     height: calc(100vh - 45px - 20px);
