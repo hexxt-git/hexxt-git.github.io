@@ -5,6 +5,7 @@
     --accent: #ec5757;
     --background: #151515;
     --background-dark: #121212;
+    scroll-behavior: smooth;
 }
 html{
     scroll-behavior: smooth;
@@ -22,6 +23,19 @@ html{
 *::-webkit-selection {
     background: var(--accent);
     color: #000;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #171717;
+}
+::-webkit-scrollbar-thumb {
+    background: #5553;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #7773;
 }
 body{
     background-color: var(--background-dark);
