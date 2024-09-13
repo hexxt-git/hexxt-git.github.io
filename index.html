@@ -1,324 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Zeghdani Salah | Software Engineering</title>
-	<meta charset="UTF-8" />
-	<meta name="author" content="HEXXT" />
-	<meta name="description" content="Zeghdani Salah's personal website">
-    <meta name="viewport" content="width=device-width" initial-scale="1.0">
-	<link rel="shortcut icon" href="./src/icons/web-dev-plus.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./src/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <script src="./src/script.js" defer></script>
-</head>
-<body>
-    <nav id="nav-bar">
-        <a class="nav-item" href="./index.html" id="home-nav">
-            <img src="./src/icons/home.svg" alt="home button"> 
-        </a>
-        <a class="nav-item" href="#">landing</a>
-        <a class="nav-item" href="#cards-page">about-me</a>
-        <a class="nav-item" href="#latest-projects">gallery</a>
-        <a class="nav-item" href="#contacts-page">contacts</a>
-    </nav>
-    <div id="landing">
-        <img src="./src/images/cut-out.png" alt="a cut-out picture of me" id="cut-out"/>
-        <div id="landing-left">
-            <div id="landing-name">
-                Zeghdani<span>.</span><br>
-                salah<span>_</span>eddine<span>.</span>
+    <head>
+        <title>Zeghdani Salah | Software Engineering</title>
+        <meta charset="UTF-8" />
+        <meta name="author" content="HEXXT" />
+        <meta name="description" content="Zeghdani Salah's personal website" />
+        <meta name="viewport" content="width=device-width" initial-scale="1.0" />
+        <link rel="shortcut icon" href="./src/icons/web-dev-plus.svg" type="image/x-icon" />
+        <link rel="stylesheet" href="./src/style.css" />
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+        <script src="./src/script.js" defer></script>
+    </head>
+    <body>
+        <nav id="nav-bar">
+            <a class="nav-item" href="./index.html" id="home-nav">
+                <img src="./src/icons/home.svg" alt="home button" />
+            </a>
+            <a class="nav-item" href="#">landing</a>
+            <a class="nav-item" href="#cards-page">about-me</a>
+            <a class="nav-item" href="#latest-projects">gallery</a>
+            <a class="nav-item" href="#contacts-page">contacts</a>
+        </nav>
+        <div id="landing">
+            <img src="./src/images/cut-out.png" alt="a cut-out picture of me" id="cut-out" />
+            <div id="landing-left">
+                <div id="landing-name">
+                    Zeghdani<span>.</span><br />
+                    salah<span>_</span>eddine<span>.</span>
+                </div>
+                <hr />
+                <div id="landing-contacts">
+                    <a href="https://www.linkedin.com/in/zeghdani" target="_blank">linkedin</a>,
+                    <a href="https://t.me/HEXXT0" target="_blank">telegram</a>,
+                    <a href="https://github.com/hexxt-git" target="_blank">github</a>...
+                </div>
+                <a id="landing-more-contacts" href="#contacts-page">all contacts</a>
             </div>
-            <hr>
-            <div id="landing-contacts">
-                <a href="https://www.linkedin.com/in/zeghdani" target="_blank">linkedin</a>,
-                <a href="https://t.me/HEXXT0" target="_blank">telegram</a>,
-                <a href="https://github.com/hexxt-git" target="_blank">github</a>...
+            <div id="landing-right">
+                <div id="landing-introduction">introduction</div>
+                <div id="landing-paragraph-title">
+                    computer science <span>&&</span> software development<span>:</span>
+                </div>
+                <div id="landing-paragraph">
+                    &nbsp&nbsp Engineer of computer science and information technology in the making at the university
+                    of science and technology houari boumediene
+                    <a href="https://www.usthb.dz/" target="_blank"> usthb </a>.
+                </div>
+                <a id="landing-learn-more" href="#cards-page">learn more</a>
             </div>
-            <a id="landing-more-contacts" href="#contacts-page">all contacts</a>
+            <div id="landing-mobile">
+                <div id="landing-name">
+                    Zeghdani<span>.</span><br />
+                    salah<span>_</span>eddine<span>.</span>
+                </div>
+                <hr />
+                <div id="landing-paragraph">
+                    &nbsp&nbsp State <span>engineer</span> of computer science and information technology in the making
+                    at
+                    <a href="https://www.usthb.dz/" target="_blank">
+                        the university of science and technology houari boumediene</a
+                    ><span>.</span> Web <span>&&</span> software developer
+                    <a href="https://www.fiverr.com/nineed" target="_blank"> freelancer</a><span>.</span>
+                </div>
+            </div>
+            <a href="#cards-page" id="landing-scroller">scroll down</a>
         </div>
-        <div id="landing-right">
-            <div id="landing-introduction">introduction</div>
-            <div id="landing-paragraph-title">
-                computer science <span>&&</span> software development<span>:</span>
-            </div>
-            <div id="landing-paragraph">
-                &nbsp&nbsp Engineer of computer science and information technology in the making at the university of science and technology houari boumediene <a href="https://www.usthb.dz/" target="_blank"> usthb </a>.
-            </div>
-            <a id="landing-learn-more" href="#cards-page">learn more</a>
-        </div>
-        <div id="landing-mobile">
-            <div id="landing-name">
-                Zeghdani<span>.</span><br>
-                salah<span>_</span>eddine<span>.</span>
-            </div>
-            <hr>
-            <div id="landing-paragraph">
-                &nbsp&nbsp State <span>engineer</span> of computer science and information technology in the making at <a href="https://www.usthb.dz/" target="_blank"> the university of science and technology houari boumediene</a><span>.</span> Web <span>&&</span> software developer <a href="https://www.fiverr.com/nineed" target="_blank"> freelancer</a><span>.</span>
-            </div>
-        </div>
-        <a href="#cards-page" id="landing-scroller">scroll down</a>
-    </div>
-    <div id="cards-page">
-        <div class="cards-title">hobbies</div>
-        <div class="card-collection-description">hobbies i enjoy and practice everyday.</div>
-        <div class="cards-collection">
-            <div class="card">
-                <img src="/src/icons/internet.svg" class="card-image" alt="web dev icon" />
-                <div class="card-title">web development</div>
-                <div class="card-description">
-                    developing sites such as this one for the web.
-                    covering both front and backend 
+        <div id="cards-page">
+            <div class="cards-title">hobbies</div>
+            <div class="card-collection-description">hobbies i enjoy and practice everyday.</div>
+            <div class="cards-collection">
+                <div class="card">
+                    <img src="/src/icons/internet.svg" class="card-image" alt="web dev icon" />
+                    <div class="card-title">web development</div>
+                    <div class="card-description">
+                        developing sites such as this one for the web. covering both front and backend
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/src/icons/app-window.svg" class="card-image" alt="application window icon" />
+                    <div class="card-title">software development</div>
+                    <div class="card-description">
+                        creating applications and games mostly from scratch using C && Python.
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/src/icons/lamp.svg" class="card-image" alt="lamp icon" />
+                    <div class="card-title">studying</div>
+                    <div class="card-description">
+                        I'm still a student so I have to altough I really enjoy studying Mathemathics and casually
+                        learning new things.
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/src/icons/dumbbell.svg" class="card-image" alt="dumbell icon" />
+                    <div class="card-title">exercise</div>
+                    <div class="card-description">
+                        I consistently exercise mostly for health reasons, but also because it's fun!
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="/src/icons/app-window.svg" class="card-image" alt="application window icon" />
-                <div class="card-title">software development</div>
-                <div class="card-description">
-                    creating applications and games
-                    mostly from scratch
-                    using C && Python.
+            <div class="cards-title">languages && technologies</div>
+            <div class="card-collection-description">
+                coding languages and technologies I am proficient at and can use to build things.
+            </div>
+            <div class="cards-collection">
+                <div class="card">
+                    <img src="/src/icons/web-dev.svg" class="card-image" alt="image of web-dev" />
+                    <div class="card-title">HTML && CSS && Javascript</div>
+                    <div class="card-description">
+                        the vanilla taste of website development, you can never underestimate the power of the basics.
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/src/icons/web-dev-plus.svg" class="card-image" alt="image of web-dev" />
+                    <div class="card-title">TailwindCSS && Typescript</div>
+                    <div class="card-description">
+                        These tools along with many others enhance the development experience allowing for much better
+                        results
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/src/icons/pyramid.svg" class="card-image" alt="logo for svelte" />
+                    <div class="card-title">Svelte && Sveltekit</div>
+                    <div class="card-description">
+                        simple, fast and scalable web framework. i use it for most my projects
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/src/icons/terminal.svg" class="card-image" alt="terminal icon" />
+                    <div class="card-title">Node.js / Express.js</div>
+                    <div class="card-description">
+                        reliable back end framework suitable for most web apps and server applications. i also use sql,
+                        socketio for the backend
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/src/icons/raylib.png" class="card-image" alt="raylib icon" />
+                    <div class="card-title">raylib</div>
+                    <div class="card-description">
+                        with so many ports, this simple game making framework allows me to create games in Python && C.
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="/src/icons/lamp.svg" class="card-image" alt="lamp icon" />
-                <div class="card-title">studying</div>
-                <div class="card-description">
-                    I'm still a student so I have to
-                    altough I really enjoy studying Mathemathics and casually learning
-                    new things.
+            <div class="cards-title">certificates</div>
+            <div class="card-collection-description">
+                some of the certificates and awards i have accumulated over the years.
+            </div>
+            <div class="cards-collection">
+                <div class="card">
+                    <img src="/src/icons/freecodecamp.png" class="card-image" alt="image of card x" />
+                    <div class="card-title">responsive web design</div>
+                    <div class="card-description">
+                        300 hours of course work at
+                        <a href="http://freeCodeCamp.org" target="_blank">freeCodeCamp.org</a>
+                        online platform, on HTML && CSS.
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/src/icons/freecodecamp.png" class="card-image" alt="image of card x" />
+                    <div class="card-title">JavaScript Algorithms and Data Structures</div>
+                    <div class="card-description">
+                        300 hours of course work at
+                        <a href="http://freeCodeCamp.org" target="_blank">freeCodeCamp.org</a>
+                        online platform, on JavaScript.
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/src/icons/codingame.png" class="card-image" alt="codingame logo" />
+                    <div class="card-title">
+                        Python 3 <br />
+                        certification
+                    </div>
+                    <div class="card-description">
+                        passed the
+                        <a href="https://www.codingame.com">codingame.com</a> Python 3 certification test. with a score
+                        of 100%.
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="/src/icons/codingame.png" class="card-image" alt="codingame logo" />
+                    <div class="card-title">JavaScript Certification</div>
+                    <div class="card-description">
+                        passed the
+                        <a href="https://www.codingame.com">codingame.com</a> JavaScript certification test. with a 100%
+                        score.
+                    </div>
                 </div>
             </div>
-            <div class="card">
-                <img src="/src/icons/dumbbell.svg" class="card-image" alt="dumbell icon" />
-                <div class="card-title">exercise</div>
-                <div class="card-description"> 
-                    I consistently exercise mostly
-                    for health reasons, but also
-                    because it's fun!
+            <div class="cards-title">hackathons</div>
+            <div class="card-collection-description">competitive experiences i have had.</div>
+            <div class="cards-collection">
+                <div class="card">
+                    <img
+                        src="/src/icons/MC.webp"
+                        class="card-image"
+                        alt="image of card x"
+                        style="transform: scaleY(0.8)"
+                    />
+                    <div class="card-title">microhack 2.0</div>
+                    <div class="card-description">
+                        organized by microclub in 2024. it was a development competition. we developed our own file
+                        management
+                        <a href="https://github.com/hexxt-git/docsoft" target="_blank">platform</a>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="cards-title">languages && technologies</div>
-        <div class="card-collection-description">coding languages and technologies I am proficient at and can use to build things.</div>
-        <div class="cards-collection">
-            <div class="card">
-                <img src="/src/icons/web-dev.svg" class="card-image" alt="image of web-dev" />
-                <div class="card-title">HTML && CSS && Javascript</div>
-                <div class="card-description">
-                    the vanilla taste of website
-                    development, you can never
-                    underestimate the power of
-                    the basics.
+                <div class="card">
+                    <img src="/src/icons/ncs.png" class="card-image" alt="image of card x" />
+                    <div class="card-title">NCS Hack</div>
+                    <div class="card-description">
+                        We developed a health care assistant
+                        <a href="https://github.com/wailbentafat/CROHN" target="_blank">platform</a>
+                        for crohn patients. and we won the second place.
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="/src/icons/web-dev-plus.svg" class="card-image" alt="image of web-dev" />
-                <div class="card-title">TailwindCSS && Typescript</div>
-                <div class="card-description">
-                    These tools along with many others
-                    enhance the development experience
-                    allowing for much better results
+                <div class="card">
+                    <img src="/src/icons/squid-tech.png" class="card-image" alt="codingame logo" />
+                    <div class="card-title">SquidTech</div>
+                    <div class="card-description">
+                        We got to develop a social media
+                        <a href="https://ecosphere.celec.club/" target="_blank">platform</a>
+                        during one week and that got us the prize for one of the categories.
+                    </div>
                 </div>
-            </div>
-            <div class="card">
-                <img src="/src/icons/pyramid.svg" class="card-image" alt="logo for svelte" />
-                <div class="card-title">Svelte && Sveltekit</div>
-                <div class="card-description">
-                    simple, fast and scalable web framework.
-                    i use it for most my projects
-                </div>
-            </div>
-            <div class="card">
-                <img src="/src/icons/terminal.svg" class="card-image" alt="terminal icon" />
-                <div class="card-title">Node.js / Express.js</div>
-                <div class="card-description">
-                    reliable back end framework
-                    suitable for most web apps
-                    and server applications.
-                    i also use sql, socketio for the backend
-                </div>
-            </div>
-            <div class="card">
-                <img src="/src/icons/raylib.png" class="card-image" alt="raylib icon" />
-                <div class="card-title">raylib</div>
-                <div class="card-description">
-                    with so many ports, this simple game making
-                    framework allows me to create games in Python && C.
-                </div>
-            </div>
-        </div>
-        <div class="cards-title">certificates</div>
-        <div class="card-collection-description">some of the certificates and awards i have accumulated over the years.</div>
-        <div class="cards-collection">
-            <div class="card">
-                <img src="/src/icons/freecodecamp.png" class="card-image" alt="image of card x" />
-                <div class="card-title">responsive web design</div>
-                <div class="card-description">
-                    300 hours of course work at <a href="http://freeCodeCamp.org" target="_blank">freeCodeCamp.org</a> online platform, on HTML && CSS.
-                </div>
-            </div>
-            <div class="card">
-                <img src="/src/icons/freecodecamp.png" class="card-image" alt="image of card x" />
-                <div class="card-title">JavaScript Algorithms and Data Structures</div>
-                <div class="card-description">
-                    300 hours of course work at <a href="http://freeCodeCamp.org" target="_blank">freeCodeCamp.org</a> online platform, on JavaScript.
-                </div>
-            </div>
-            <div class="card">
-                <img src="/src/icons/codingame.png" class="card-image" alt="codingame logo" />
-                <div class="card-title"> Python 3 <br /> certification </div>
-                <div class="card-description">
-                    passed the <a href="https://www.codingame.com">codingame.com</a> Python 3 certification test. with a score of 100%.
-                </div>
-            </div>
-            <div class="card">
-                <img src="/src/icons/codingame.png" class="card-image" alt="codingame logo" />
-                <div class="card-title">JavaScript Certification</div>
-                <div class="card-description">
-                    passed the <a href="https://www.codingame.com">codingame.com</a> JavaScript certification test. with a 100% score.
-                </div>
-            </div>
-        </div>
-        <div class="cards-title">hackathons</div>
-        <div class="card-collection-description">competitive experiences i have had.</div>
-        <div class="cards-collection">
-            <div class="card">
-                <img src="/src/icons/MC.webp" class="card-image" alt="image of card x" style="transform: scaleY(0.8);" />
-                <div class="card-title">microhack 2.0</div>
-                <div class="card-description">
-                    organized by microclub in 2024. it was a development competition. we developed our own file management <a href="https://github.com/hexxt-git/docsoft" target="_blank">platform</a> 
-                </div>
-            </div>
-            <div class="card">
-                <img src="/src/icons/ncs.png" class="card-image" alt="image of card x" />
-                <div class="card-title">NCS Hack</div>
-                <div class="card-description">
-                    We developed a health care assistant 
-                    <a href="https://github.com/wailbentafat/CROHN" target="_blank">platform</a>
-                    for crohn patients. and we won the second place.
-                </div>
-            </div>
-            <div class="card">
-                <img src="/src/icons/squid-tech.png" class="card-image" alt="codingame logo" />
-                <div class="card-title"> SquidTech </div>
-                <div class="card-description">
-                    We got to develop a social media <a href="https://ecosphere.celec.club/" target="_blank">platform</a> during one week and that got us the prize for one of the categories.
-                </div>
-            </div>
-            <div class="card">
-                <img src="/src/icons/greenhat.png" class="card-image" alt="codingame logo" style="scale: 0.85;" />
-                <div class="card-title">Greenhat CTF</div>
-                <div class="card-description">
-                    We won this cyber security competition first place and i personally was third in points.
+                <div class="card">
+                    <img src="/src/icons/greenhat.png" class="card-image" alt="codingame logo" style="scale: 0.85" />
+                    <div class="card-title">Greenhat CTF</div>
+                    <div class="card-description">
+                        We won this cyber security competition first place and i personally was third in points.
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div id="latest-projects">
-        <div id="latest-projects-title">latest projects</div>
-        <div id="latest-projects-description">The latest Projects I have worked on.</div>
-        <div id="latest-projects-collection">
-            <div class="project-large">
-                <a class="project-image" href="https://github.com/hexxt-git/ecosphere-interface" target="_blank">
-                    <img src="/src/images/projects/ecosphere.png" alt="image of a sky island in superbox-3.5">
+        <div id="latest-projects">
+            <div id="latest-projects-title">latest projects</div>
+            <div id="latest-projects-description">The latest Projects I have worked on.</div>
+            <div id="latest-projects-collection">
+                <div class="project-large">
+                    <a class="project-image" href="https://github.com/hexxt-git/ecosphere-interface" target="_blank">
+                        <img src="/src/images/projects/ecosphere.png" alt="image of a sky island in superbox-3.5" />
+                    </a>
+                    <div class="project-title">Ecosphere</div>
+                    <div class="project-description">
+                        &nbsp; An ecology oriented social media platform i developed the frontend interface of during
+                        the squid-tech hackathon 2024. it won us the most innovative team prize. and you can
+                        <a href="https://ecosphere-interface.vercel.app" target="_blank"
+                            >visit <img src="/src/icons/link.svg"
+                        /></a>
+                        it here.
+                    </div>
+                    <div class="date">Jul 2024</div>
+                </div>
+                <div class="project-large">
+                    <a class="project-image" href="https://hexxt-git.github.io/platformer" target="_blank">
+                        <img src="/src/images/projects/platformer.png" alt="a platforming game" />
+                    </a>
+                    <div class="project-title">platformer</div>
+                    <div class="project-description">
+                        &nbsp; my platforming game made in JavaScript using Matter.js, it does feature very smooth
+                        gameplay and a complete map that allowed for the fast growth of a competitive community. made in
+                        24 hours for
+                        <a href="https://agc.microclub.tech/" target="_blank">AGC<img src="/src/icons/link.svg" /></a>
+                        coding challenges
+                        <a href="https://hexxt-git.github.io/platformer" target="_blank"
+                            >visit <img src="/src/icons/link.svg"
+                        /></a>
+                    </div>
+                    <div class="date">Jan-Mar 2023</div>
+                </div>
+                <div class="project-small">
+                    <a class="project-image" href="https://github.com/hexxt-git/2D-gravity" target="_blank">
+                        <img src="/src/images/projects/2D gravity.png" alt="planets and stars in my simulator" />
+                    </a>
+                    <div class="project-title">2D Gravity simulator</div>
+                    <div class="project-description">
+                        this is a 2D simulation of gravity I made in Python && raylib. In this simulation you can place
+                        and delete coloured balls that attract each other, form orbits and complex systems
+                        <a href="https://github.com/hexxt-git/2D-gravity" target="_blank"
+                            >visit <img src="/src/icons/link.svg"
+                        /></a>
+                    </div>
+                    <div class="date">Aug 2022</div>
+                </div>
+                <div class="project-small">
+                    <a class="project-image" href="https://hexxt-git.github.io/particle-life-js/" target="_blank">
+                        <img src="/src/images/projects/particle life.png" alt="particle in my simulator" />
+                    </a>
+                    <div class="project-title">particle life</div>
+                    <div class="project-description">
+                        This is a particle simulation I completly from scratch in JavaScript. It is a simulation of a
+                        simple ruleset that dictates the interactions between coloured particles that allow complex
+                        patterns to emerge through life like fashion. The simulation settings are tuneable through a UI
+                        made with HTML && CSS.
+                        <a href="https://hexxt-git.github.io/particle-life-js/" target="_blank"
+                            >visit <img src="/src/icons/link.svg"
+                        /></a>
+                    </div>
+                    <div class="date">Jan-Mar 2023</div>
+                </div>
+                <div class="project-small">
+                    <a class="project-image" href="https://github.com/hexxt-git" target="_blank">
+                        <img src="/src/images/projects/gallery.png" alt="image of project x" />
+                    </a>
+                    <div class="project-title">More</div>
+                    <div class="project-description">
+                        I have a whole lot more projects, neatly put together in this gallery
+                        <a href="https://github.com/hexxt-git" target="_blank"
+                            >visit <img src="/src/icons/link.svg"
+                        /></a>
+                    </div>
+                    <div class="date">2021 - ongoing</div>
+                </div>
+            </div>
+        </div>
+        <div id="contacts-page">
+            <div id="contacts-title">contacts</div>
+            <div id="contacts-description">don't hesitate to reach me through any of the following services:</div>
+            <div id="contacts-collection">
+                <a class="contact" href="mailto:zeghdns@gmail.com" target="_blank">
+                    <span>.</span> Email
+                    <img src="src/icons/link.svg" />
                 </a>
-                <div class="project-title">Ecosphere</div>
-                <div class="project-description">
-                    &nbsp; An ecology oriented social media platform i developed the frontend interface of during the squid-tech hackathon 2024. it won us the most innovative team prize. and you can
-                    <a href="https://ecosphere-interface.vercel.app" target="_blank">visit <img src="/src/icons/link.svg" /></a>
-                    it here.
-                </div>
-                <div class="date">Jul 2024</div>
-            </div>
-            <div class="project-large">
-                <a class="project-image" href="https://hexxt-git.github.io/platformer" target="_blank">
-                    <img src="/src/images/projects/platformer.png" alt="a platforming game">
+                <a class="contact" href="https://www.instagram.com/salah.zeghdani/" target="_blank">
+                    <span>.</span> Instagram
+                    <img src="src/icons/link.svg" />
                 </a>
-                <div class="project-title">platformer</div>
-                <div class="project-description">
-                    &nbsp; my platforming game made in JavaScript using Matter.js, it does feature very smooth gameplay and a complete map that allowed for the fast growth of a competitive community. made in 24 hours for <a href="https://agc.microclub.tech/" target="_blank">AGC<img src="/src/icons/link.svg"/></a> coding challenges
-                    <a href="https://hexxt-git.github.io/platformer" target="_blank">visit <img src="/src/icons/link.svg" /></a>
-                </div>
-                <div class="date">Jan-Mar 2023</div>
-            </div>
-            <div class="project-small">
-                <a class="project-image" href="https://github.com/hexxt-git/2D-gravity" target="_blank">
-                    <img src="/src/images/projects/2D gravity.png" alt="planets and stars in my simulator">
+                <a class="contact" href="https://www.facebook.com/salah.zeghdani.35/" target="_blank">
+                    <span>.</span> Facebook
+                    <img src="src/icons/link.svg" />
                 </a>
-                <div class="project-title">2D Gravity simulator</div>
-                <div class="project-description">
-                    this is a 2D simulation of gravity I made in Python && raylib. In this simulation you can place and delete coloured balls that attract each other, form orbits and complex systems
-                    <a href="https://github.com/hexxt-git/2D-gravity" target="_blank">visit <img src="/src/icons/link.svg" /></a>
-                </div>
-                <div class="date">Aug 2022</div>
-            </div>
-            <div class="project-small">
-                <a class="project-image" href="https://hexxt-git.github.io/particle-life-js/" target="_blank">
-                    <img src="/src/images/projects/particle life.png" alt="particle in my simulator">
+                <a class="contact" href="https://discord.com/users/891724893547290725" target="_blank">
+                    <span>.</span> Discord
+                    <img src="src/icons/link.svg" />
                 </a>
-                <div class="project-title">particle life</div>
-                <div class="project-description">
-                    This is a particle simulation I completly from scratch in JavaScript. It is a simulation of a simple ruleset that dictates the interactions between coloured particles that allow complex patterns to emerge through life like fashion. The simulation settings are tuneable through a UI made with HTML && CSS.
-                    <a href="https://hexxt-git.github.io/particle-life-js/" target="_blank">visit <img src="/src/icons/link.svg" /></a>
-                </div>
-                <div class="date">Jan-Mar 2023</div>
-            </div>
-            <div class="project-small">
-                <a class="project-image" href="https://github.com/hexxt-git" target="_blank">
-                    <img src="/src/images/projects/gallery.png" alt="image of project x">
+                <a class="contact" href="https://www.linkedin.com/in/zeghdani" target="_blank">
+                    <span>.</span> linkedn
+                    <img src="src/icons/link.svg" />
                 </a>
-                <div class="project-title">More</div>
-                <div class="project-description">
-                    I have a whole lot more projects, neatly put together in this gallery 
-                    <a href="https://github.com/hexxt-git" target="_blank">visit <img src="/src/icons/link.svg" /></a>
-                </div>
-                <div class="date">2021 - ongoing</div>
+                <a class="contact" href="https://github.com/hexxt-git" target="_blank">
+                    <span>.</span> Github
+                    <img src="src/icons/link.svg" />
+                </a>
+                <a class="contact" href="https://t.me/HEXXT0" target="_blank">
+                    <span>.</span> Telegram
+                    <img src="src/icons/link.svg" />
+                </a>
+                <a class="contact" href="https://www.fiverr.com/" target="_blank">
+                    <span>.</span> Fiverr
+                    <img src="src/icons/link.svg" />
+                </a>
             </div>
         </div>
-    </div>
-    <div id="contacts-page">
-        <div id="contacts-title">contacts</div>
-        <div id="contacts-description">don't hesitate to reach me through any of the following services:</div>
-        <div id="contacts-collection">
-            <a class="contact" href="mailto:zeghdns@gmail.com" target="_blank">
-                <span>.</span> Email
-                <img src="src/icons/link.svg">
-            </a>
-            <a class="contact" href="https://www.instagram.com/salah.zeghdani/" target="_blank">
-                <span>.</span> Instagram
-                <img src="src/icons/link.svg">
-            </a>
-            <a class="contact" href="https://www.facebook.com/salah.zeghdani.35/" target="_blank">
-                <span>.</span> Facebook
-                <img src="src/icons/link.svg">
-            </a>
-            <a class="contact" href="https://discord.com/users/891724893547290725" target="_blank">
-                <span>.</span> Discord
-                <img src="src/icons/link.svg">
-            </a>
-            <a class="contact" href="https://www.linkedin.com/in/zeghdani" target="_blank">
-                <span>.</span> linkedn
-                <img src="src/icons/link.svg">
-            </a>
-            <a class="contact" href="https://github.com/hexxt-git" target="_blank">
-                <span>.</span> Github
-                <img src="src/icons/link.svg">
-            </a>
-            <a class="contact" href="https://t.me/HEXXT0" target="_blank">
-                <span>.</span> Telegram
-                <img src="src/icons/link.svg">
-            </a>
-            <a class="contact" href="https://www.fiverr.com/" target="_blank">
-                <span>.</span> Fiverr
-                <img src="src/icons/link.svg">
-            </a>
+        <div id="footer">
+            <div>
+                made by me
+                <a href="https://hexxt-git.github.io" target="_blank">hexxt-git</a>
+            </div>
+            <div>icons by <a href="https://lucide.dev/" target="_blank">lucide.dev</a></div>
+            <div>this website is quite outdated</div>
+            <div>visit my socials for the latest stuff</div>
         </div>
-    </div>
-    <div id="footer">
-        <div>made by me <a href="https://hexxt-git.github.io" target="_blank">hexxt-git</a></div>
-        <div>icons by <a href="https://lucide.dev/" target="_blank">lucide.dev</a></div>
-        <div>this website is quite outdated</div>
-        <div>visit my socials for the latest stuff</div>
-    </div>
-</body>
+    </body>
 </html>

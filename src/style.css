@@ -1,6 +1,6 @@
-*{
-    --white-text: #DDD;
-    --gray-text: #AAA;
+* {
+    --white-text: #ddd;
+    --gray-text: #aaa;
     --accent-darker: #e23535;
     --accent: #ec5757;
     --background: #151515;
@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
     scrollbar-width: thin;
 }
-html{
+html {
     max-width: 100vw;
     overflow-x: hidden;
 }
@@ -37,7 +37,7 @@ html{
 ::-webkit-scrollbar-thumb:hover {
     background: #7773;
 }
-body{
+body {
     background-color: var(--background-dark);
     font-family: roboto;
     margin: 0;
@@ -46,7 +46,7 @@ body{
     max-width: 100vw;
     overflow-x: hidden;
 }
-#nav-bar{
+#nav-bar {
     position: fixed;
     width: calc(100vw - 1px);
     height: 45px;
@@ -61,7 +61,7 @@ body{
     font-size: 20px;
     border-bottom: #111 solid 3px;
 }
-#home-nav{
+#home-nav {
     margin-right: auto;
     border: none;
     padding-left: 20px;
@@ -70,7 +70,7 @@ body{
     align-items: center;
     gap: 5px;
 }
-.nav-item{
+.nav-item {
     width: 120px;
     color: var(--white-text);
     text-decoration: none;
@@ -80,20 +80,20 @@ body{
     letter-spacing: 1px;
     flex-shrink: 1;
 }
-.nav-item:hover{
+.nav-item:hover {
     text-decoration: underline var(--accent);
 }
-#landing{
+#landing {
     height: calc(100vh - 45px - 20px);
     width: 100%;
     background-color: var(--background);
     background: radial-gradient(circle, var(--background-dark) 40vh, var(--background) 40px);
     position: relative;
 }
-#landing-mobile{
+#landing-mobile {
     display: none;
 }
-#cut-out{
+#cut-out {
     position: absolute;
     bottom: 0px;
     left: calc(50% - 70vh / 2);
@@ -104,7 +104,7 @@ body{
     -webkit-user-select: none;
     -webkit-user-drag: none;
 }
-#landing-left{
+#landing-left {
     position: absolute;
     top: -50px;
     left: 10%;
@@ -112,24 +112,24 @@ body{
     font-size: 15px;
     padding-top: 150px;
 }
-#landing-name{
+#landing-name {
     font-size: 38px;
     font-weight: 600;
     line-height: 38px;
     text-transform: uppercase;
     letter-spacing: 3px;
 }
-#landing-name span{
+#landing-name span {
     color: var(--accent-darker);
 }
-#landing-left hr{
+#landing-left hr {
     border-color: var(--accent-darker);
     width: 120px;
     border-style: solid;
     border-width: 2px;
     margin: 15px 0px 10px 15px;
 }
-#landing-contacts{
+#landing-contacts {
     color: var(--accent);
     display: flex;
     flex-wrap: wrap;
@@ -140,7 +140,7 @@ body{
     -ms-transform: translate(-3px);
     -o-transform: translate(-3px);
 }
-#landing-contacts :any-link{
+#landing-contacts :any-link {
     color: var(--gray-text);
     transform: translateX(2px); /*scuffed code*/
     transition: color 0.1s ease-in-out;
@@ -153,10 +153,10 @@ body{
     -ms-transform: translateX(2px);
     -o-transform: translateX(2px);
 }
-#landing-contacts :any-link:hover{
+#landing-contacts :any-link:hover {
     color: var(--accent);
 }
-#landing-more-contacts{
+#landing-more-contacts {
     border: 3px solid var(--accent-darker);
     color: var(--accent);
     width: 135px;
@@ -173,7 +173,7 @@ body{
     font-weight: 600;
     letter-spacing: 2px;
 }
-#landing-right{
+#landing-right {
     position: absolute;
     top: -70px;
     left: 65%;
@@ -181,28 +181,28 @@ body{
     padding-top: 150px;
     max-width: 360px;
 }
-#landing-introduction{
+#landing-introduction {
     color: var(--accent-darker);
     letter-spacing: 2px;
     font-variant: small-caps;
     font-size: 18px;
     padding-left: 10px;
 }
-#landing-paragraph-title{
+#landing-paragraph-title {
     font-size: 25px;
     margin-bottom: 5px;
 }
-#landing-paragraph-title span{
+#landing-paragraph-title span {
     color: var(--accent);
 }
-#landing-paragraph{
+#landing-paragraph {
     font-size: 15px;
     font-weight: 100;
     line-height: 20px;
     color: var(--gray-text);
     margin-bottom: 10px;
 }
-#landing-paragraph a:any-link{
+#landing-paragraph a:any-link {
     color: var(--white-text);
     font-variant: small-caps;
     font-size: 18px;
@@ -212,10 +212,10 @@ body{
     -ms-transition: color 0.1s ease-in-out;
     -o-transition: color 0.1s ease-in-out;
 }
-#landing-paragraph a:any-link:hover{
+#landing-paragraph a:any-link:hover {
     color: var(--accent);
 }
-#landing-learn-more{
+#landing-learn-more {
     border: 3px solid var(--accent-darker);
     color: var(--accent);
     width: 135px;
@@ -231,7 +231,7 @@ body{
     font-weight: 600;
     letter-spacing: 3px;
 }
-#landing-scroller{
+#landing-scroller {
     position: absolute;
     bottom: 15px;
     right: 30px;
@@ -239,15 +239,15 @@ body{
     text-decoration: none;
     cursor: pointer;
 }
-#landing-scroller:hover{
+#landing-scroller:hover {
     text-decoration: underline;
 }
-#cards-page{
+#cards-page {
     max-width: 100vw;
     overflow: hidden;
     padding-bottom: 50px;
 }
-.cards-title{
+.cards-title {
     font-size: 20px;
     margin-top: 35px;
     margin-bottom: 5px;
@@ -256,13 +256,13 @@ body{
     text-align: center;
     letter-spacing: 3px;
 }
-.card-collection-description{
+.card-collection-description {
     color: var(--gray-text);
     text-align: center;
     margin: 20px;
     margin-top: 0px;
 }
-.cards-collection{
+.cards-collection {
     display: flex;
     justify-content: center;
     gap: 25px;
@@ -270,7 +270,7 @@ body{
     flex-wrap: wrap;
     padding: 0px 20px;
 }
-.card{
+.card {
     height: 220px;
     width: min-content;
     min-width: 100px;
@@ -280,25 +280,25 @@ body{
     flex-shrink: 1;
     background-color: var(--background);
 }
-.card-image{
+.card-image {
     height: 70px;
     width: 70px;
     margin: 25px auto;
     display: block;
 }
-.card-title{
+.card-title {
     color: var(--accent-darker);
     font-size: 14px;
     text-align: center;
     letter-spacing: 1px;
     margin-bottom: 10px;
 }
-.card-description{
+.card-description {
     font-size: 11px;
     color: var(--gray-text);
     text-align: center;
 }
-.card-description a:any-link{
+.card-description a:any-link {
     color: var(--gray-text);
     transition: color 0.1s ease-in-out;
     -webkit-transition: color 0.1s ease-in-out;
@@ -306,15 +306,15 @@ body{
     -ms-transition: color 0.1s ease-in-out;
     -o-transition: color 0.1s ease-in-out;
 }
-.card-description a:any-link:hover{
+.card-description a:any-link:hover {
     color: var(--accent);
 }
-#latest-projects{
+#latest-projects {
     background-color: var(--background);
     padding: 35px 20px 45px 20px;
     max-width: 100vw;
 }
-#latest-projects-title{
+#latest-projects-title {
     font-size: 20px;
     margin-bottom: 5px;
     color: var(--accent-darker);
@@ -322,12 +322,12 @@ body{
     text-align: center;
     letter-spacing: 3px;
 }
-#latest-projects-description{
+#latest-projects-description {
     color: var(--gray-text);
     text-align: center;
     margin-bottom: 20px;
 }
-#latest-projects-collection{
+#latest-projects-collection {
     display: grid;
     grid-template-rows: repeat(3, 140px);
     grid-template-columns: 280px 280px 350px;
@@ -337,13 +337,14 @@ body{
 .project-large {
     grid-row: 1 / 4;
 }
-.project-large, .project-small{
+.project-large,
+.project-small {
     background: var(--background-dark);
     margin: 0px 30px 15px 0px;
     overflow: hidden;
     position: relative;
 }
-.project-image{
+.project-image {
     filter: grayscale(0.8);
     -webkit-filter: grayscale(0.8);
     transition: 0.2s filter ease-in-out;
@@ -352,29 +353,29 @@ body{
     -ms-transition: 0.2s filter ease-in-out;
     -o-transition: 0.2s filter ease-in-out;
 }
-.project-image:hover{
+.project-image:hover {
     filter: grayscale(0.2);
     -webkit-filter: grayscale(0.2);
 }
-.project-large img{
+.project-large img {
     max-width: 100%;
 }
-.project-small{
+.project-small {
     display: grid;
     grid-template-rows: auto 1fr;
     grid-template-columns: 150px 1fr;
 }
-.project-small .project-image{
+.project-small .project-image {
     grid-row: 1 / 3;
     grid-column: 1 / 2;
     overflow: hidden;
 }
-.project-small img{
+.project-small img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
-.date{
+.date {
     background-color: var(--accent-darker);
     position: absolute;
     top: 0px;
@@ -383,24 +384,24 @@ body{
     font-size: 13px;
     letter-spacing: 1px;
 }
-.project-title{
+.project-title {
     font-size: 15px;
     color: var(--accent-darker);
     text-align: center;
     padding-top: 15px;
     letter-spacing: 1px;
 }
-.project-large .project-description{
+.project-large .project-description {
     text-align: justify;
 }
-.project-description{
+.project-description {
     font-size: 12px;
     color: var(--gray-text);
     padding: 7px;
     line-height: 14px;
     overflow-y: auto;
 }
-.project-description a img{
+.project-description a img {
     width: 12px;
     height: 12px;
     transform: translate(0px, 2px);
@@ -409,7 +410,7 @@ body{
     -ms-transform: translate(0px, 2px);
     -o-transform: translate(0px, 2px);
 }
-.project-description a:any-link{
+.project-description a:any-link {
     color: var(--gray-text);
     transition: color 0.1s ease-in-out;
     -webkit-transition: color 0.1s ease-in-out;
@@ -417,13 +418,13 @@ body{
     -ms-transition: color 0.1s ease-in-out;
     -o-transition: color 0.1s ease-in-out;
 }
-.project-description a:any-link:hover{
+.project-description a:any-link:hover {
     color: var(--accent);
 }
-#contacts-page{
+#contacts-page {
     padding: 10px;
 }
-#contacts-title{
+#contacts-title {
     font-size: 20px;
     margin-bottom: 5px;
     color: var(--accent-darker);
@@ -431,19 +432,19 @@ body{
     text-align: center;
     letter-spacing: 3px;
 }
-#contacts-description{
+#contacts-description {
     color: var(--gray-text);
     text-align: center;
     margin-bottom: 20px;
 }
-#contacts-collection{
+#contacts-collection {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 10px;
     padding: 0px 250px;
 }
-.contact{
+.contact {
     background-color: var(--background);
     width: 180px;
     height: 20px;
@@ -456,14 +457,14 @@ body{
     -ms-transition: color 0.1s ease-in-out;
     -o-transition: color 0.1s ease-in-out;
 }
-.contact:any-link{
+.contact:any-link {
     text-decoration: none;
-    color: var(--white-text)
+    color: var(--white-text);
 }
-.contact:hover{
+.contact:hover {
     color: var(--accent);
 }
-.contact span{
+.contact span {
     color: var(--accent-darker);
     font-size: 40px;
     transform: translate(-2px, -11px);
@@ -473,7 +474,7 @@ body{
     -o-transform: translate(-2px, -11px);
     user-select: none;
 }
-.contact img{
+.contact img {
     margin-left: auto;
     transform: scale(0.65);
     -webkit-transform: scale(0.65);
@@ -481,7 +482,7 @@ body{
     -ms-transform: scale(0.65);
     -o-transform: scale(0.65);
 }
-#footer{
+#footer {
     background-color: var(--background);
     display: flex;
     align-items: center;
@@ -490,7 +491,7 @@ body{
     padding-top: 20px;
     padding-bottom: 40px;
 }
-#footer div a:any-link{
+#footer div a:any-link {
     color: var(--white-text);
     transition: color 0.1s ease-in-out;
     -webkit-transition: color 0.1s ease-in-out;
@@ -498,66 +499,67 @@ body{
     -ms-transition: color 0.1s ease-in-out;
     -o-transition: color 0.1s ease-in-out;
 }
-#footer div a:hover{
-    color: var(--accent-darker)
+#footer div a:hover {
+    color: var(--accent-darker);
 }
 
-
 @media (max-width: 1000px) {
-    #latest-projects-collection{
+    #latest-projects-collection {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 150px);
     }
-    .project-small, .project-large{
+    .project-small,
+    .project-large {
         margin: 5px 0px;
     }
-    .project-large{
+    .project-large {
         grid-row: auto;
     }
-    .project-large{
+    .project-large {
         display: grid;
         grid-template-rows: auto 1fr;
         grid-template-columns: 150px 1fr;
     }
-    .project-large .project-image{
+    .project-large .project-image {
         grid-row: 1 / 3;
         grid-column: 1 / 2;
         overflow: hidden;
     }
-    .project-large img{
+    .project-large img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
 }
 
-@media (orientation: portrait){
-    body{
+@media (orientation: portrait) {
+    body {
         padding-top: 60px;
     }
-    #nav-bar{
+    #nav-bar {
         height: 50px;
         padding-top: 5px;
         border-bottom-width: 5px;
     }
-    .nav-item{
+    .nav-item {
         display: none;
     }
-    #home-nav{
+    #home-nav {
         display: block;
         padding-left: 10px;
     }
-    #home-nav img{
+    #home-nav img {
         width: 32px;
     }
-    #landing{
+    #landing {
         height: calc(100vh - 60px);
         background: radial-gradient(circle, var(--background-dark) 30vh, var(--background) 30px);
     }
-    #landing-left, #landing-right{
+    #landing-left,
+    #landing-right {
         display: none;
     }
-    #cut-out{
+    #cut-out {
         left: calc(50% - 60vh / 2);
         height: 60vh;
         transform: translateX(-15px);
@@ -565,120 +567,123 @@ body{
         -moz-transform: translateX(-15px);
         -ms-transform: translateX(-15px);
         -o-transform: translateX(-15px);
-}
-    #landing-mobile{
+    }
+    #landing-mobile {
         display: block;
         padding: 15px;
         padding-top: 30px;
         position: relative;
         z-index: 1;
     }
-    #landing-name{
+    #landing-name {
         font-size: 30px;
         line-height: 30px;
         text-shadow: #000 5px 5px 8px;
     }
-    #landing-name span{
+    #landing-name span {
         font-size: 35px;
     }
-    #landing-mobile hr{
+    #landing-mobile hr {
         border: solid 2px var(--accent-darker);
         width: 150px;
         margin: 15px 0px 10px 10px;
     }
-    #landing-paragraph{
+    #landing-paragraph {
         font-size: 20px;
         line-height: 20px;
         text-shadow: #000 5px 5px 8px;
     }
-    #landing-paragraph span{
+    #landing-paragraph span {
         color: var(--accent);
     }
-    #landing-paragraph a:any-link{
+    #landing-paragraph a:any-link {
         font-size: 20px;
         line-height: 20px;
         font-variant: normal;
         color: var(--gray-text);
     }
-    #landing-scroller{
+    #landing-scroller {
         font-size: 20px;
         right: 20px;
         bottom: 10px;
     }
-    .cards-title{
+    .cards-title {
         font-size: 25px;
         margin-bottom: 0px;
     }
-    .card-collection-description{
+    .card-collection-description {
         font-size: 16px;
     }
-    .cards-collection{
+    .cards-collection {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         padding: 0px 10px;
         gap: 10px;
     }
-    .card{
+    .card {
         width: auto;
         max-width: none;
         height: 210px;
         padding: 10px;
         overflow-y: auto;
     }
-    .card-image{
+    .card-image {
         width: 70px;
         height: 70px;
         margin: 10px auto;
     }
-    .card-title{
+    .card-title {
         font-size: 18px;
         margin-bottom: 0px;
     }
-    .card-description{
+    .card-description {
         font-size: 13px;
     }
-    #latest-projects{
+    #latest-projects {
         padding-top: 10px;
     }
-    #latest-projects-title{
+    #latest-projects-title {
         font-size: 22px;
     }
-    #latest-projects-collection{
+    #latest-projects-collection {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(5, 200px);
     }
-    .project-small, .project-large{
+    .project-small,
+    .project-large {
         margin: 8px 0px;
         grid-column: auto;
         grid-row: auto;
     }
-    .project-large, .project-small{
+    .project-large,
+    .project-small {
         display: grid;
         grid-template-rows: auto 1fr;
         grid-template-columns: 150px 1fr;
     }
-    .project-image{
+    .project-image {
         grid-row: 1 / 3;
         grid-column: 1 / 2;
         filter: grayscale(0.3);
         -webkit-filter: grayscale(0.3);
     }
-    .project-large img, .project-small img{
+    .project-large img,
+    .project-small img {
         width: 100%;
         height: 100%;
         object-fit: cover;
     }
-    .project-title{
+    .project-title {
         font-size: 20px;
         padding-top: 5px;
     }
-    .project-description{
+    .project-description {
         font-size: 18px;
         line-height: 18px;
         text-align: left !important;
     }
-    .project-description a img{
+    .project-description a img {
         width: 17px;
         height: 17px;
         transform: translate(-3px, 2px);
@@ -687,21 +692,21 @@ body{
         -ms-transform: translate(-3px, 2px);
         -o-transform: translate(-3px, 2px);
     }
-    #contacts-page{
+    #contacts-page {
         padding-bottom: 0px;
     }
-    #contacts-title{
+    #contacts-title {
         font-size: 22px;
         margin-bottom: 0px;
     }
-    #contacts-collection{
+    #contacts-collection {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         padding: 0px;
         width: 100%;
     }
-    .contact{
+    .contact {
         width: auto;
         margin-bottom: 5px;
     }
